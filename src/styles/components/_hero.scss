@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+  &__bg {
+    position: relative;
+    &-img {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__figure {
+    max-width: 30%;
+    position: absolute;
+    top: 190px;
+  }
+
+  &__figure-container {
+    position: relative;
+  }
+
+  &__bg-cube-sm {
+    max-width: 28%;
+  }
+
+  &__bg-cube-lg {
+    max-width: 38%;
+  }
+}

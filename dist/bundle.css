@@ -347,3 +347,8 @@ template {
 body {
   font-family: "poppins", sans-serif;
 }
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
