@@ -1,5 +1,7 @@
 @use "./base/normalize";
 @use "./utils/variables";
 @use "./base/common";
-@use "./components/header";
-@use "./components/hero";
+@use "./layout/header";
+@use "./layout/hero";
+@use "./layout/about-me";
+@use "./layout/what-I-do";

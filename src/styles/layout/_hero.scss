@@ -1,5 +1,6 @@
 .hero {
-  position: relative;
+  background: no-repeat;
+  background-position: bottom right;
   &__bg {
     position: relative;
     &-img {
@@ -10,8 +11,8 @@
 
   &__figure {
     max-width: 30%;
-    position: absolute;
-    top: 190px;
+    position: relative;
+    top: 10px;
   }
 
   &__figure-container {

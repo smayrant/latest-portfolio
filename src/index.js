@@ -10,8 +10,9 @@ import purpleBall from "./img/bg-figure-purple-ball.png";
 import purpleBase from "./img/bg-figure-purple-base.png";
 import purpleFig from "./img/bg-figure-purple.png";
 import yellowFig from "./img/bg-figure-yellow.png";
-import heroCube from "./img/hero-cube.png";
-import heroCubeLg from "./img/hero-cube-lg.png";
+import whiteCube from "./img/hero-cube.png";
+import whiteCubeLg from "./img/hero-cube-lg.png";
+import btnArrow from "./img/arrow-right.svg";
 
 // header images
 const logoImg = document.querySelector(".header__logo");
@@ -21,8 +22,8 @@ logoImg.src = logo;
 const scrollImg = document.querySelector(".scroll__img");
 scrollImg.src = scrollIcon;
 
-const heroBG = document.querySelector(".hero__bg-img");
-heroBG.src = blueBG;
+const heroBG = document.querySelector(".hero");
+heroBG.style.backgroundImage = "url('./img/blue-bg.svg')";
 
 // hero figures
 const blueBallFig = document.querySelector(".blue-ball-fig");
@@ -49,8 +50,20 @@ ltPurpleFig.src = purpleFig;
 const yellowBlock = document.querySelector(".yellow-fig");
 yellowBlock.src = yellowFig;
 
-const smHeroCube = document.querySelector(".hero__bg-cube-sm");
-smHeroCube.src = heroCube;
+const smWhiteCube = document.querySelector(".hero__bg-cube-sm");
+smWhiteCube.src = whiteCube;
 
-const lgHeroCube = document.querySelector(".hero__bg-cube-lg");
-lgHeroCube.src = heroCubeLg;
+const lgWhiteCube = document.querySelector(".hero__bg-cube-lg");
+lgWhiteCube.src = whiteCubeLg;
+
+// What I Do figures
+
+const whatIDoCube = document.querySelector(".what-i-do__pink-cube");
+whatIDoCube.src = pinkFig;
+
+const whatIDoCubeWhite = document.querySelector(".what-i-do__white-cube");
+whatIDoCubeWhite.src = whiteCubeLg;
+
+// Right Arrow Icon for Buttons
+const rtArrow = document.querySelector(".btn-arrow");
+rtArrow.src = btnArrow;

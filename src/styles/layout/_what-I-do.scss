@@ -1,0 +1,39 @@
+@use "../utils/variables";
+
+.what-i-do {
+  margin-top: 4rem;
+
+  &__hr {
+    max-width: 30%;
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 1px 0.1px #9f9fa9;
+  }
+
+  &__pink-cube {
+    max-width: 35%;
+  }
+
+  &__white-cube {
+    max-width: 65%;
+  }
+
+  &__heading--lg {
+    font-size: 3em;
+  }
+
+  &__btn {
+    background: variables.$main-purple;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    font-size: 13px;
+  }
+}
+
+.btn-arrow {
+  width: 20px !important;
+  height: auto;
+}
