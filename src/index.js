@@ -15,6 +15,10 @@ import whiteCubeLg from "./img/hero-cube-lg.png";
 import btnArrow from "./img/arrow-right.svg";
 import purpleCube from "./img/purple-cube.png";
 import blueCube from "./img/blue-cube.png";
+import showPreview from "./img/showtrackr.jpg";
+import moviePreview from "./img/movie-seeker.jpg";
+import SGPreview from "./img/sgassociates.jpg";
+import fitPreview from "./img/fit4less.jpg";
 
 // header images
 const logoImg = document.querySelector(".header__logo");
@@ -87,3 +91,16 @@ aboutMePinkCube.src = pinkFig;
 
 const aboutMeBlueCube = document.querySelector(".about-me__blue-cube");
 aboutMeBlueCube.src = blueCube;
+
+// Work Images
+const showtrackr = document.querySelector(".showTrackrImg");
+showtrackr.src = showPreview;
+
+const movieSeeker = document.querySelector(".movieSeekerImg");
+movieSeeker.src = moviePreview;
+
+const SGassociates = document.querySelector(".SGAssociatesImg");
+SGassociates.src = SGPreview;
+
+const fit4less = document.querySelector(".fit4lessImg");
+fit4less.src = fitPreview;

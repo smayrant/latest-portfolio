@@ -9,6 +9,10 @@
 
   &__heading--sm {
     color: #fff;
+
+    &:before {
+      background-color: #fff;
+    }
   }
 
   &__circles {

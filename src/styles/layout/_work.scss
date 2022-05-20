@@ -1,0 +1,11 @@
+.work {
+  &__item-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+  }
+
+  &__item-img {
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+  }
+}

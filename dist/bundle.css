@@ -344,6 +344,10 @@ template {
   display: none;
 }
 
+html {
+  background-color: #f9fafa;
+}
+
 body {
   font-family: "poppins", sans-serif;
 }
@@ -417,15 +421,14 @@ body {
 }
 
 .about-me {
+  position: relative;
   margin-top: 3rem;
+  padding-bottom: 13rem;
   background-color: #1b1b87;
   color: #fff;
 }
 .about-me__heading--sm {
   color: #fff;
-}
-.about-me__circles {
-  position: relative;
 }
 .about-me__circles:before, .about-me__circles:after {
   content: "";
@@ -433,13 +436,14 @@ body {
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.15);
   position: absolute;
-  top: 50%;
+  top: 10%;
   overflow: hidden;
 }
 .about-me__circles:before {
-  height: 324px;
-  width: 324px;
+  height: 524px;
+  width: 524px;
   right: 15%;
+  bottom: 20%;
 }
 .about-me__circles:after {
   height: 124px;
@@ -449,11 +453,21 @@ body {
   position: relative;
   left: 20px;
   right: 14px;
+  top: 100px;
   max-width: 70px;
 }
 .about-me__orange-ball {
   max-width: 6%;
 }
-.about-me__pink-cube {
+.about-me__pink-cube, .about-me__blue-cube {
   max-width: 15%;
+}
+
+.work__item-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+}
+.work__item-img {
+  border-radius: 24px 24px 0 0;
+  max-width: 100%;
 }
