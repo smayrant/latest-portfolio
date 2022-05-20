@@ -13,6 +13,8 @@ import yellowFig from "./img/bg-figure-yellow.png";
 import whiteCube from "./img/hero-cube.png";
 import whiteCubeLg from "./img/hero-cube-lg.png";
 import btnArrow from "./img/arrow-right.svg";
+import purpleCube from "./img/purple-cube.png";
+import blueCube from "./img/blue-cube.png";
 
 // header images
 const logoImg = document.querySelector(".header__logo");
@@ -23,7 +25,7 @@ const scrollImg = document.querySelector(".scroll__img");
 scrollImg.src = scrollIcon;
 
 const heroBG = document.querySelector(".hero");
-heroBG.style.backgroundImage = "url('./img/blue-bg.svg')";
+heroBG.style.backgroundImage = `url("${blueBG}")`;
 
 // hero figures
 const blueBallFig = document.querySelector(".blue-ball-fig");
@@ -67,3 +69,21 @@ whatIDoCubeWhite.src = whiteCubeLg;
 // Right Arrow Icon for Buttons
 const rtArrow = document.querySelector(".btn-arrow");
 rtArrow.src = btnArrow;
+
+// About me section images
+const leftAboutMeCube = document.querySelector(".about-me__purple-cube--left");
+leftAboutMeCube.src = purpleCube;
+
+const rightAboutMeCube = document.querySelector(
+  ".about-me__purple-cube--right"
+);
+rightAboutMeCube.src = purpleCube;
+
+const aboutMeOrangeBall = document.querySelector(".about-me__orange-ball");
+aboutMeOrangeBall.src = orangeBall;
+
+const aboutMePinkCube = document.querySelector(".about-me__pink-cube");
+aboutMePinkCube.src = pinkFig;
+
+const aboutMeBlueCube = document.querySelector(".about-me__blue-cube");
+aboutMeBlueCube.src = blueCube;

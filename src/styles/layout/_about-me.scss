@@ -1,3 +1,57 @@
+@use "../utils/variables";
+
 .about-me {
+  position: relative;
   margin-top: 3rem;
+  padding-bottom: 13rem;
+  background-color: variables.$main-blue;
+  color: #fff;
+
+  &__heading--sm {
+    color: #fff;
+  }
+
+  &__circles {
+    // position: relative;
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      border: 2px solid rgba($color: #fff, $alpha: 0.15);
+      position: absolute;
+      top: 10%;
+      overflow: hidden;
+    }
+
+    &:before {
+      height: 524px;
+      width: 524px;
+      right: 15%;
+      bottom: 20%;
+    }
+
+    &:after {
+      height: 124px;
+      width: 124px;
+    }
+  }
+
+  &__purple-cube--left,
+  &__purple-cube--right {
+    position: relative;
+    left: 20px;
+    right: 14px;
+    top: 100px;
+    max-width: 70px;
+  }
+
+  &__orange-ball {
+    max-width: 6%;
+  }
+
+  &__pink-cube,
+  &__blue-cube {
+    max-width: 15%;
+  }
 }

@@ -348,7 +348,112 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+.secondary-heading {
+  color: #4c40f7;
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
+}
+
+.hero {
+  background: no-repeat;
+  background-position: bottom right;
+}
+.hero__bg {
+  position: relative;
+}
+.hero__bg-img {
+  position: absolute;
+  right: 0;
+}
+.hero__figure {
+  max-width: 30%;
+  position: relative;
+  top: 10px;
+}
+.hero__figure-container {
+  position: relative;
+}
+.hero__bg-cube-sm {
+  max-width: 28%;
+}
+.hero__bg-cube-lg {
+  max-width: 38%;
+}
+
+.what-i-do {
+  margin-top: 4rem;
+}
+.what-i-do__hr {
+  max-width: 30%;
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 1px 0.1px #9f9fa9;
+}
+.what-i-do__pink-cube {
+  max-width: 35%;
+}
+.what-i-do__white-cube {
+  max-width: 65%;
+}
+.what-i-do__heading--lg {
+  font-size: 3em;
+}
+.what-i-do__btn {
+  background: #4c40f7;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  font-size: 13px;
+}
+
+.btn-arrow {
+  width: 20px;
+  height: auto;
+}
+
+.about-me {
+  margin-top: 3rem;
+  background-color: #1b1b87;
+  color: #fff;
+}
+.about-me__heading--sm {
+  color: #fff;
+}
+.about-me__circles {
+  position: relative;
+}
+.about-me__circles:before, .about-me__circles:after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+}
+.about-me__circles:before {
+  height: 324px;
+  width: 324px;
+  right: 15%;
+}
+.about-me__circles:after {
+  height: 124px;
+  width: 124px;
+}
+.about-me__purple-cube--left, .about-me__purple-cube--right {
+  position: relative;
+  left: 20px;
+  right: 14px;
+  max-width: 70px;
+}
+.about-me__orange-ball {
+  max-width: 6%;
+}
+.about-me__pink-cube {
+  max-width: 15%;
 }
