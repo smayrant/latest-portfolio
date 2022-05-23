@@ -1,11 +1,10 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .about-me {
-  position: relative;
   margin-top: 3rem;
   padding-bottom: 13rem;
-  background-color: variables.$main-blue;
-  color: #fff;
+  @include mixins.blue-bg-styling;
 
   &__heading--sm {
     color: #fff;
@@ -16,16 +15,10 @@
   }
 
   &__circles {
-    // position: relative;
     &:before,
     &:after {
-      content: "";
-      display: inline-block;
-      border-radius: 50%;
-      border: 2px solid rgba($color: #fff, $alpha: 0.15);
-      position: absolute;
+      @include mixins.bg-circles;
       top: 10%;
-      overflow: hidden;
     }
 
     &:before {

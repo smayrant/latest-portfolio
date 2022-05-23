@@ -1,8 +1,11 @@
 @use "./base/normalize";
 @use "./utils/variables";
+@use "./utils/mixins";
 @use "./base/common";
 @use "./layout/header";
 @use "./layout/hero";
 @use "./layout/what-I-do";
 @use "./layout/about-me";
 @use "./layout/work";
+@use "./layout/contact";
+@use "./layout/footer";

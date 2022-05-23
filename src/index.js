@@ -1,6 +1,4 @@
 import "./styles/main.scss";
-import logo from "./img/logo.svg";
-import scrollIcon from "./img/scroll-icon.svg";
 import blueBG from "./img/blue-bg.svg";
 import blueBall from "./img/bg-figure-blue-ball.png";
 import blueFig from "./img/bg-figure-lt-blue.png";
@@ -12,21 +10,15 @@ import purpleFig from "./img/bg-figure-purple.png";
 import yellowFig from "./img/bg-figure-yellow.png";
 import whiteCube from "./img/hero-cube.png";
 import whiteCubeLg from "./img/hero-cube-lg.png";
-import btnArrow from "./img/arrow-right.svg";
 import purpleCube from "./img/purple-cube.png";
 import blueCube from "./img/blue-cube.png";
 import showPreview from "./img/showtrackr.jpg";
 import moviePreview from "./img/movie-seeker.jpg";
 import SGPreview from "./img/sgassociates.jpg";
 import fitPreview from "./img/fit4less.jpg";
-
-// header images
-const logoImg = document.querySelector(".header__logo");
-logoImg.src = logo;
+import footerBG from "./img/bg-footer.png";
 
 // hero images
-const scrollImg = document.querySelector(".scroll__img");
-scrollImg.src = scrollIcon;
 
 const heroBG = document.querySelector(".hero");
 heroBG.style.backgroundImage = `url("${blueBG}")`;
@@ -70,10 +62,6 @@ whatIDoCube.src = pinkFig;
 const whatIDoCubeWhite = document.querySelector(".what-i-do__white-cube");
 whatIDoCubeWhite.src = whiteCubeLg;
 
-// Right Arrow Icon for Buttons
-const rtArrow = document.querySelector(".btn-arrow");
-rtArrow.src = btnArrow;
-
 // About me section images
 const leftAboutMeCube = document.querySelector(".about-me__purple-cube--left");
 leftAboutMeCube.src = purpleCube;
@@ -104,3 +92,8 @@ SGassociates.src = SGPreview;
 
 const fit4less = document.querySelector(".fit4lessImg");
 fit4less.src = fitPreview;
+
+// footer images
+
+const bgFooter = document.querySelector(".footer");
+bgFooter.style.backgroundImage = `url("${footerBG}")`;

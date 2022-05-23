@@ -5,8 +5,13 @@ html {
   background-color: #f9fafa;
 }
 
+// .main {
+//   height: 100vh;
+// }
+
 body {
   font-family: variables.$main-font, sans-serif;
+  height: 100vh;
 }
 
 // secondary headings
@@ -23,4 +28,23 @@ body {
     width: 52px;
     background-color: variables.$main-purple;
   }
+}
+
+// Buttons
+.btn {
+  background: variables.$main-purple;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  font-size: 13px;
+  border-radius: 12px;
+}
+
+// Input fields/textarea
+input,
+textarea {
+  background-color: variables.$lt-gray;
+  color: variables.$dark-blue;
 }

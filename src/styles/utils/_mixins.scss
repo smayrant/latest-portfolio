@@ -1,0 +1,16 @@
+@use "../utils/variables";
+
+@mixin blue-bg-styling {
+  position: relative;
+  background-color: variables.$main-blue;
+  color: #fff;
+  overflow: hidden;
+}
+
+@mixin bg-circles {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid rgba($color: #fff, $alpha: 0.15);
+  position: absolute;
+}

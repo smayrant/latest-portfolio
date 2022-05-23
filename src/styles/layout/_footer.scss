@@ -1,0 +1,32 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.footer {
+  background: no-repeat;
+  background-position: bottom right;
+  @include mixins.blue-bg-styling;
+  padding-bottom: 1em;
+
+  &__subheading {
+    color: variables.$pink;
+  }
+
+  &__circles {
+    &:before,
+    &:after {
+      @include mixins.bg-circles;
+      display: inline;
+    }
+    &:before {
+      height: 324px;
+      width: 324px;
+      right: 15%;
+      bottom: 20%;
+    }
+
+    &:after {
+      height: 124px;
+      width: 124px;
+    }
+  }
+}
