@@ -1,13 +1,14 @@
 import "./styles/main.scss";
-import blueBG from "./img/blue-bg.svg";
-import blueBall from "./img/bg-figure-blue-ball.png";
-import blueFig from "./img/bg-figure-lt-blue.png";
+// import blueBG from "./img/blue-bg.svg";
+// import blueBall from "./img/bg-figure-blue-ball.png";
+// import blueFig from "./img/bg-figure-lt-blue.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
 import pinkFig from "./img/bg-figure-pink.png";
+import ltPinkCube from "./img/lt-pink-cube.png";
 import purpleBall from "./img/bg-figure-purple-ball.png";
-import purpleBase from "./img/bg-figure-purple-base.png";
-import purpleFig from "./img/bg-figure-purple.png";
-import yellowFig from "./img/bg-figure-yellow.png";
+// import purpleBase from "./img/bg-figure-purple-base.png";
+// import purpleFig from "./img/bg-figure-purple.png";
+// import yellowFig from "./img/bg-figure-yellow.png";
 import whiteCube from "./img/hero-cube.png";
 import whiteCubeLg from "./img/hero-cube-lg.png";
 import purpleCube from "./img/purple-cube.png";
@@ -17,36 +18,12 @@ import moviePreview from "./img/movie-seeker.jpg";
 import SGPreview from "./img/sgassociates.jpg";
 import fitPreview from "./img/fit4less.jpg";
 import footerBG from "./img/bg-footer.png";
+import heroBG from "./img/hero-bg.png";
 
 // hero images
 
-const heroBG = document.querySelector(".hero");
-heroBG.style.backgroundImage = `url("${blueBG}")`;
-
-// hero figures
-const blueBallFig = document.querySelector(".blue-ball-fig");
-blueBallFig.src = blueBall;
-
-const ltBlueFig = document.querySelector(".lt-blue-fig");
-ltBlueFig.src = blueFig;
-
-const orangeBallFig = document.querySelector(".orange-ball-fig");
-orangeBallFig.src = orangeBall;
-
-const pinkCube = document.querySelector(".pink-fig");
-pinkCube.src = pinkFig;
-
-const purpleBallFig = document.querySelector(".purple-ball-fig");
-purpleBallFig.src = purpleBall;
-
-const purpleBaseFig = document.querySelector(".purple-base-fig");
-purpleBaseFig.src = purpleBase;
-
-const ltPurpleFig = document.querySelector(".purple-fig");
-ltPurpleFig.src = purpleFig;
-
-const yellowBlock = document.querySelector(".yellow-fig");
-yellowBlock.src = yellowFig;
+const heroImg = document.querySelector(".hero__img");
+heroImg.src = heroBG;
 
 const smWhiteCube = document.querySelector(".hero__bg-cube-sm");
 smWhiteCube.src = whiteCube;
@@ -57,7 +34,7 @@ lgWhiteCube.src = whiteCubeLg;
 // What I Do figures
 
 const whatIDoCube = document.querySelector(".what-i-do__pink-cube");
-whatIDoCube.src = pinkFig;
+whatIDoCube.src = ltPinkCube;
 
 const whatIDoCubeWhite = document.querySelector(".what-i-do__white-cube");
 whatIDoCubeWhite.src = whiteCubeLg;
@@ -79,6 +56,14 @@ aboutMePinkCube.src = pinkFig;
 
 const aboutMeBlueCube = document.querySelector(".about-me__blue-cube");
 aboutMeBlueCube.src = blueCube;
+
+const aboutMePurpleBall = document.querySelector(".about-me__purple-ball");
+aboutMePurpleBall.src = purpleBall;
+
+const aboutMePurpleBall2 = document.querySelector(
+  ".about-me__purple-ball--second"
+);
+aboutMePurpleBall2.src = purpleBall;
 
 // Work Images
 const showtrackr = document.querySelector(".showTrackrImg");

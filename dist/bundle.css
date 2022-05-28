@@ -12,6 +12,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -352,6 +356,14 @@ html {
 
 body {
   font-family: "poppins", sans-serif;
+  height: 100vh;
+  line-height: 1.75;
+}
+
+.center {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
 .secondary-heading {
@@ -379,6 +391,16 @@ body {
   border-radius: 12px;
 }
 
+input,
+textarea {
+  background-color: rgba(244, 244, 244, 0.8);
+  color: #111029;
+}
+
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -386,28 +408,71 @@ body {
 
 .hero {
   background: no-repeat;
-  background-position: bottom right;
+  background-position: right bottom;
+  height: 100vh;
 }
-.hero__bg {
+@media only screen and (max-height: 570px) {
+  .hero {
+    background-position: right bottom -70%;
+  }
+}
+@media only screen and (max-height: 485px) {
+  .hero {
+    background-position: right bottom -90%;
+  }
+}
+.hero__intro {
   position: relative;
 }
-.hero__bg-img {
-  position: absolute;
-  right: 0;
-}
-.hero__figure {
-  max-width: 30%;
-  position: relative;
-  top: 10px;
-}
-.hero__figure-container {
-  position: relative;
+.hero__heading {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: -1.55px;
+  font-weight: 600;
 }
 .hero__bg-cube-sm {
-  max-width: 28%;
+  width: 100px;
+  position: absolute;
+  right: 50px;
+  top: 60px;
 }
 .hero__bg-cube-lg {
-  max-width: 38%;
+  width: 130px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.blue-ball-fig {
+  width: 30px;
+  bottom: 0;
+}
+
+.lt-blue-fig {
+  width: 30px;
+}
+
+.orange-ball-fig {
+  width: 30px;
+}
+
+.pink-fig {
+  width: 30px;
+}
+
+.purple-ball-fig {
+  width: 30px;
+}
+
+.purple-fig {
+  width: 30px;
+}
+
+.yellow-fig {
+  width: 30px;
+}
+
+.purple-base-fig {
+  bottom: 0;
 }
 
 .what-i-do {
@@ -435,11 +500,12 @@ body {
 }
 
 .about-me {
-  position: relative;
   margin-top: 3rem;
   padding-bottom: 13rem;
+  position: relative;
   background-color: #1b1b87;
   color: #fff;
+  overflow: hidden;
 }
 .about-me__heading--sm {
   color: #fff;
@@ -454,7 +520,6 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.15);
   position: absolute;
   top: 10%;
-  overflow: hidden;
 }
 .about-me__circles:before {
   height: 524px;
@@ -487,4 +552,39 @@ body {
 .work__item-img {
   border-radius: 24px 24px 0 0;
   width: 100%;
+}
+
+.contact__form {
+  color: #8c8ca0;
+}
+
+.footer {
+  background: no-repeat;
+  background-position: bottom right;
+  position: relative;
+  background-color: #1b1b87;
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+.footer__subheading {
+  color: #ffbcbc;
+}
+.footer__circles:before, .footer__circles:after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
+  display: inline;
+}
+.footer__circles:before {
+  height: 324px;
+  width: 324px;
+  right: 15%;
+  bottom: 20%;
+}
+.footer__circles:after {
+  height: 124px;
+  width: 124px;
 }

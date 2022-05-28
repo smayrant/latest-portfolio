@@ -7,7 +7,7 @@
     <title>Sheldrick Mayrant | Front End Web Developer</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header center">
       <div class="header__content">
         <a href="../dist/index.html" class="header__logo-link">
           <svg
@@ -31,16 +31,29 @@
       </div>
     </header>
     <section class="hero">
-      <h6 class="hero__name secondary-heading">Sheldrick Mayrant</h6>
-      <h1 class="hero__intro">
-        <span>Hi, my</span>
-        <span>name is</span>
-        <span>Sheldrick.</span>
-        <span>I'm a Web</span>
-        <span>Developer</span>
-      </h1>
-      <img src="" alt="white background cube figure" class="hero__bg-cube-sm" />
-      <img src="" alt="white background cube figure" class="hero__bg-cube-lg" />
+      <div class="hero__intro">
+        <div class="hero__headings-container center">
+          <h6 class="hero__name secondary-heading">Sheldrick Mayrant</h6>
+          <h1 class="hero__heading">
+            <span>Hi, my name's</span>
+            <span>Sheldrick.</span>
+            <br />
+            <span>And I'm a</span>
+            <br />
+            <span>Web Developer.</span>
+          </h1>
+        </div>
+        <img
+          src=""
+          alt="white background cube figure"
+          class="hero__bg-cube-sm"
+        />
+        <img
+          src=""
+          alt="white background cube figure"
+          class="hero__bg-cube-lg"
+        />
+      </div>
       <a href="#about-me" class="scroll">
         <div class="scroll__icon">
           <svg
@@ -124,29 +137,24 @@
           </svg>
         </div>
       </a>
-      <div class="hero__figure-container">
-        <img src="" alt="hero figure" class="hero__figure blue-ball-fig" />
-        <img src="" alt="hero figure" class="hero__figure lt-blue-fig" />
-        <img src="" alt="hero figure" class="hero__figure orange-ball-fig" />
-        <img src="" alt="hero figure" class="hero__figure pink-fig" />
-        <img src="" alt="hero figure" class="hero__figure purple-ball-fig" />
-        <img src="" alt="hero figure" class="hero__figure purple-base-fig" />
-        <img src="" alt="hero figure" class="hero__figure purple-fig" />
-        <img src="" alt="hero figure" class="hero__figure yellow-fig" />
+      <div class="hero__img-container">
+        <img src="" alt="hero background" class="hero__img" />
       </div>
     </section>
     <main class="main">
-      <section class="what-i-do">
+      <section class="what-i-do center">
         <h6 class="what-i-do__heading secondary-heading">What I Do</h6>
         <h3 class="what-i-do__intro-heading">
           I enjoy creating delightful, human-centered digital experiences.
         </h3>
-        <hr class="what-i-do__hr" />
-        <img
-          src=""
-          alt="What I do background figure"
-          class="what-i-do__pink-cube"
-        />
+        <div class="what-i-do__cube-hr-container">
+          <hr class="what-i-do__hr" />
+          <img
+            src=""
+            alt="What I do background figure"
+            class="what-i-do__pink-cube"
+          />
+        </div>
         <h2 class="what-i-do__heading--lg">
           <span>Think. Make.</span>
           <span>Solve.</span>
@@ -183,7 +191,8 @@
           </svg>
         </button>
       </section>
-      <section class="about-me" id="about-me">
+      <section class="about-me center" id="about-me">
+        <div class="about-me__circles"></div>
         <h6 class="about-me__heading--sm secondary-heading">About Me</h6>
         <h2 class="about-me__heading--lg">
           <span>Lifelong Learner.</span><br />
@@ -199,26 +208,37 @@
             thoroughly enjoy doing
           </p>
         </div>
-        <div class="about-me__circles"></div>
-        <img
-          src=""
-          alt="purple background cube"
-          class="about-me__purple-cube--left"
-        />
-        <img
-          src=""
-          alt="purple background cube"
-          class="about-me__purple-cube--right"
-        />
-        <img src="" alt="pink background cube" class="about-me__pink-cube" />
-        <img src="" alt="blue background cube" class="about-me__blue-cube" />
-        <img
-          src=""
-          alt="orange background ball"
-          class="about-me__orange-ball"
-        />
+        <div class="about-me__background-img-container">
+          <img
+            src=""
+            alt="purple background cube"
+            class="about-me__purple-cube--left"
+          />
+          <img
+            src=""
+            alt="purple background cube"
+            class="about-me__purple-cube--right"
+          />
+          <img src="" alt="pink background cube" class="about-me__pink-cube" />
+          <img src="" alt="blue background cube" class="about-me__blue-cube" />
+          <img
+            src=""
+            alt="orange background ball"
+            class="about-me__orange-ball"
+          />
+          <img
+            src=""
+            alt="purple background ball"
+            class="about-me__purple-ball"
+          />
+          <img
+            src=""
+            alt="purple background ball"
+            class="about-me__purple-ball--second"
+          />
+        </div>
       </section>
-      <section class="work">
+      <section class="work center">
         <h6 class="work__heading--sm secondary-heading">My Work</h6>
         <h2 class="work__heading--lg">Recent Work.</h2>
         <div class="work__items">
@@ -264,7 +284,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact center">
         <h6 class="contact__heading--sm secondary-heading">Say Hello 👋</h6>
         <h2 class="contact__heading--lg">Let's Work Together.</h2>
         <form action="" class="contact__form">
@@ -313,7 +333,7 @@
         </form>
       </section>
     </main>
-    <section class="footer">
+    <section class="footer center">
       <footer class="footer__content">
         <svg
           width="50"

@@ -5,27 +5,34 @@ html {
   background-color: #f9fafa;
 }
 
-// .main {
-//   height: 100vh;
-// }
-
 body {
   font-family: variables.$main-font, sans-serif;
   height: 100vh;
+  line-height: 1.75;
+}
+
+// centering container
+.center {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
 // secondary headings
 .secondary-heading {
   color: variables.$main-purple;
   position: relative;
+  padding-left: 64px;
+  font-size: 1rem;
+  font-weight: 600;
 
   &:before {
-    position: absolute;
-    top: 15px;
-    left: 0;
     content: "";
-    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
     width: 52px;
+    height: 2px;
     background-color: variables.$main-purple;
   }
 }

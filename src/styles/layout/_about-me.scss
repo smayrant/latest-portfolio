@@ -5,6 +5,7 @@
   margin-top: 3rem;
   padding-bottom: 13rem;
   @include mixins.blue-bg-styling;
+  position: relative;
 
   &__heading--sm {
     color: #fff;
@@ -14,41 +15,92 @@
     }
   }
 
+  &__heading--lg {
+    font-size: 2.5rem;
+  }
+
   &__circles {
     &:before,
     &:after {
       @include mixins.bg-circles;
-      top: 10%;
+      top: 0;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
     }
 
     &:before {
       height: 524px;
       width: 524px;
-      right: 15%;
-      bottom: 20%;
+      margin-top: 262px;
     }
 
     &:after {
-      height: 124px;
-      width: 124px;
+      height: 320px;
+      width: 320px;
+      margin-top: 262px;
     }
+
+    &__bg-img-container {
+      position: relative;
+    }
+  }
+
+  &__text {
+    margin-bottom: 10rem;
   }
 
   &__purple-cube--left,
   &__purple-cube--right {
-    position: relative;
+    position: absolute;
+    bottom: 120px;
+    max-width: 100px;
+  }
+
+  &__purple-cube--left {
     left: 20px;
-    right: 14px;
-    top: 100px;
-    max-width: 70px;
+  }
+
+  &__purple-cube--right {
+    right: 20px;
   }
 
   &__orange-ball {
-    max-width: 6%;
+    max-width: 30px;
+    left: 50%;
+    margin-left: -12px;
+    position: absolute;
+    bottom: 150px;
   }
 
-  &__pink-cube,
+  &__blue-cube,
+  &__pink-cube {
+    position: absolute;
+    max-width: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+
   &__blue-cube {
-    max-width: 15%;
+    bottom: 10px;
+  }
+
+  &__pink-cube {
+    bottom: 220px;
+  }
+
+  &__purple-ball,
+  &__purple-ball--second {
+    max-width: 125px;
+    position: absolute;
+    bottom: 200px;
+  }
+
+  &__purple-ball {
+    left: 25px;
+  }
+
+  &__purple-ball--second {
+    right: -14px;
   }
 }
