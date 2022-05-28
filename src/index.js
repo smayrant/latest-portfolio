@@ -1,16 +1,10 @@
 import "./styles/main.scss";
-// import blueBG from "./img/blue-bg.svg";
-// import blueBall from "./img/bg-figure-blue-ball.png";
-// import blueFig from "./img/bg-figure-lt-blue.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
 import pinkFig from "./img/bg-figure-pink.png";
 import ltPinkCube from "./img/lt-pink-cube.png";
 import purpleBall from "./img/bg-figure-purple-ball.png";
-// import purpleBase from "./img/bg-figure-purple-base.png";
-// import purpleFig from "./img/bg-figure-purple.png";
-// import yellowFig from "./img/bg-figure-yellow.png";
-import whiteCube from "./img/hero-cube.png";
-import whiteCubeLg from "./img/hero-cube-lg.png";
+import whiteCube from "./img/white-cube.png";
+import whiteCubeLg from "./img/white-cube-lg.png";
 import purpleCube from "./img/purple-cube.png";
 import blueCube from "./img/blue-cube.png";
 import showPreview from "./img/showtrackr.jpg";
@@ -66,6 +60,9 @@ const aboutMePurpleBall2 = document.querySelector(
 aboutMePurpleBall2.src = purpleBall;
 
 // Work Images
+const workCube = document.querySelector(".work__bg-cube");
+workCube.src = whiteCube;
+
 const showtrackr = document.querySelector(".showTrackrImg");
 showtrackr.src = showPreview;
 
@@ -77,6 +74,10 @@ SGassociates.src = SGPreview;
 
 const fit4less = document.querySelector(".fit4lessImg");
 fit4less.src = fitPreview;
+
+// contact images
+const contactCubeLg = document.querySelector(".contact__bg");
+contactCubeLg.src = whiteCubeLg;
 
 // footer images
 

@@ -6,6 +6,16 @@
   background-position: bottom right;
   @include mixins.blue-bg-styling;
   padding-bottom: 1em;
+  background-size: 250px;
+
+  &__logo {
+    margin-top: 2rem;
+  }
+
+  &__heading {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
 
   &__subheading {
     color: variables.$pink;
@@ -18,15 +28,26 @@
       display: inline;
     }
     &:before {
-      height: 324px;
-      width: 324px;
-      right: 15%;
-      bottom: 20%;
+      height: 600px;
+      width: 600px;
+      // right: 15%;
+      top: 0;
     }
 
     &:after {
       height: 124px;
       width: 124px;
     }
+  }
+  &__menu {
+    display: grid;
+    grid-template-columns: 120px 80px;
+    grid-template-rows: 30px 30px;
+    margin: 2rem 0;
+  }
+
+  &__link,
+  &__copyright {
+    font-size: 0.8rem;
   }
 }

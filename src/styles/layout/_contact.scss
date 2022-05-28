@@ -1,5 +1,59 @@
+@use "../utils/variables";
+
 .contact {
+  margin: 3rem 0;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    max-width: 210px;
+  }
+
+  &__heading--lg {
+    margin-top: 4rem;
+  }
+
   &__form {
     color: #8c8ca0;
+    width: 100%;
   }
+
+  &__form-field {
+    position: relative;
+  }
+
+  &__form-svg {
+    fill: variables.$dark-blue;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}
+
+input,
+textarea {
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(244, 244, 244, 0.801191);
+  border: 2px solid rgba(244, 244, 244, 0.801191);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1.8px solid variables.$main-purple;
+  transition: 0.5s;
+}
+
+input:focus + svg,
+textarea:focus + svg {
+  fill: variables.$main-purple;
 }
