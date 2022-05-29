@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sheldrick Mayrant | Front End Web Developer</title>
-  <script defer src="bundle22308b7ff41defc89628.js"></script><link href="bundle.css" rel="stylesheet"></head>
+  <script defer src="bundlea0f8a55e8d9ecaf5c008.js"></script><link href="bundle.css" rel="stylesheet"></head>
   <body>
     <header class="header center">
       <div class="header__content">
-        <a href="../dist/index.html" class="header__logo-link">
+        <a href="./index.html" class="header__logo-link">
           <svg
             width="34"
             height="22"
@@ -54,7 +54,7 @@
           class="hero__bg-cube-lg"
         />
       </div>
-      <a href="#about-me" class="scroll">
+      <a href="#whatIDo" class="scroll">
         <div class="scroll__icon">
           <svg
             width="121"
@@ -137,29 +137,24 @@
           </svg>
         </div>
       </a>
-      <div class="hero__figure-container">
-        <!-- <img src="" alt="hero figure" class="hero__figure blue-ball-fig" />
-        <img src="" alt="hero figure" class="hero__figure lt-blue-fig" />
-        <img src="" alt="hero figure" class="hero__figure orange-ball-fig" />
-        <img src="" alt="hero figure" class="hero__figure pink-fig" />
-        <img src="" alt="hero figure" class="hero__figure purple-ball-fig" />
-        <img src="" alt="hero figure" class="hero__figure purple-fig" />
-        <img src="" alt="hero figure" class="hero__figure yellow-fig" />
-        <img src="" alt="hero figure" class="hero__figure purple-base-fig" /> -->
+      <div class="hero__img-container">
+        <img src="" alt="hero background" class="hero__img" />
       </div>
     </section>
     <main class="main">
-      <section class="what-i-do center">
+      <section id="whatIDo" class="what-i-do center">
         <h6 class="what-i-do__heading secondary-heading">What I Do</h6>
         <h3 class="what-i-do__intro-heading">
           I enjoy creating delightful, human-centered digital experiences.
         </h3>
-        <hr class="what-i-do__hr" />
-        <img
-          src=""
-          alt="What I do background figure"
-          class="what-i-do__pink-cube"
-        />
+        <div class="what-i-do__cube-hr-container">
+          <hr class="what-i-do__hr" />
+          <img
+            src=""
+            alt="What I do background figure"
+            class="what-i-do__pink-cube"
+          />
+        </div>
         <h2 class="what-i-do__heading--lg">
           <span>Think. Make.</span>
           <span>Solve.</span>
@@ -169,34 +164,37 @@
           alt="What I do background figure"
           class="what-i-do__white-cube"
         />
-        <button class="what-i-do__btn btn">
-          <span>Contact Me</span>
-          <img src="" alt="" class="what-i-do__btn-arrow btn-arrow" />
-          <svg
-            width="22"
-            height="16"
-            viewBox="0 0 22 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1 8H21"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M14 1L21 8L14 15"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
+        <a href="#contact">
+          <button class="what-i-do__btn btn">
+            <span>Contact Me</span>
+            <svg
+              class="btn-arrow"
+              width="22"
+              height="16"
+              viewBox="0 0 22 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 8H21"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 1L21 8L14 15"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </a>
       </section>
-      <section class="about-me center" id="about-me">
+      <section id="aboutMe" class="about-me center" id="about-me">
+        <div class="about-me__circles"></div>
         <h6 class="about-me__heading--sm secondary-heading">About Me</h6>
         <h2 class="about-me__heading--lg">
           <span>Lifelong Learner.</span><br />
@@ -212,37 +210,52 @@
             thoroughly enjoy doing
           </p>
         </div>
-        <div class="about-me__circles"></div>
-        <img
-          src=""
-          alt="purple background cube"
-          class="about-me__purple-cube--left"
-        />
-        <img
-          src=""
-          alt="purple background cube"
-          class="about-me__purple-cube--right"
-        />
-        <img src="" alt="pink background cube" class="about-me__pink-cube" />
-        <img src="" alt="blue background cube" class="about-me__blue-cube" />
-        <img
-          src=""
-          alt="orange background ball"
-          class="about-me__orange-ball"
-        />
+        <div class="about-me__background-img-container">
+          <img
+            src=""
+            alt="purple background cube"
+            class="about-me__purple-cube--left"
+          />
+          <img
+            src=""
+            alt="purple background cube"
+            class="about-me__purple-cube--right"
+          />
+          <img src="" alt="pink background cube" class="about-me__pink-cube" />
+          <img src="" alt="blue background cube" class="about-me__blue-cube" />
+          <img
+            src=""
+            alt="orange background ball"
+            class="about-me__orange-ball"
+          />
+          <img
+            src=""
+            alt="purple background ball"
+            class="about-me__purple-ball"
+          />
+          <img
+            src=""
+            alt="purple background ball"
+            class="about-me__purple-ball--second"
+          />
+        </div>
       </section>
-      <section class="work center">
+      <section id="work" class="work center">
         <h6 class="work__heading--sm secondary-heading">My Work</h6>
-        <h2 class="work__heading--lg">Recent Work.</h2>
+        <h2 class="work__heading--lg">Take a Look.</h2>
+        <img src="" alt="" class="work__bg-cube" />
         <div class="work__items">
           <div class="work__item-container">
-            <a href="" class="work__item">
+            <a href="./project1.html" class="work__item">
               <img
                 src=""
                 alt="Work Item Preview"
                 class="work__item-img showTrackrImg"
               />
-              <h4 class="work__item-title">Work Item Title</h4>
+              <div class="work__item-text-container">
+                <h4 class="work__item-title">Work Item Title</h4>
+                <p class="work__item-text">lorem ipsum</p>
+              </div>
             </a>
           </div>
           <div class="work__item-container">
@@ -252,7 +265,10 @@
                 alt="Work Item Preview"
                 class="work__item-img movieSeekerImg"
               />
-              <h4 class="work__item-title">Work Item Title</h4>
+              <div class="work__item-text-container">
+                <h4 class="work__item-title">Work Item Title</h4>
+                <p class="work__item-text">lorem ipsum</p>
+              </div>
             </a>
           </div>
           <div class="work__item-container">
@@ -262,7 +278,10 @@
                 alt="Work Item Preview"
                 class="work__item-img SGAssociatesImg"
               />
-              <h4 class="work__item-title">Work Item Title</h4>
+              <div class="work__item-text-container">
+                <h4 class="work__item-title">Work Item Title</h4>
+                <p class="work__item-text">lorem ipsum</p>
+              </div>
             </a>
           </div>
           <div class="work__item-container">
@@ -272,35 +291,86 @@
                 alt="Work Item Preview"
                 class="work__item-img fit4lessImg"
               />
-              <h4 class="work__item-title">Work Item Title</h4>
+              <div class="work__item-text-container">
+                <h4 class="work__item-title">Work Item Title</h4>
+                <p class="work__item-text">lorem ipsum</p>
+              </div>
             </a>
           </div>
         </div>
       </section>
-      <section class="contact center">
+      <section id="contact" class="contact center">
+        <img src="" alt="" class="contact__bg" />
         <h6 class="contact__heading--sm secondary-heading">Say Hello 👋</h6>
         <h2 class="contact__heading--lg">Let's Work Together.</h2>
         <form action="" class="contact__form">
-          <input
-            type="text"
-            name="name"
-            class="contact__form--name"
-            placeholder="Name"
-          />
-          <input
-            type="email"
-            name="email"
-            class="contact__form--email"
-            placeholder="Email"
-          />
-          <textarea
-            name="message"
-            class="contact__form--msg"
-            placeholder="Message"
-          ></textarea>
+          <div class="contact__form-field">
+            <input
+              type="text"
+              name="name"
+              class="contact__form--name"
+              placeholder="Name"
+            />
+            <svg
+              class="contact__form-svg"
+              width="17"
+              height="18"
+              viewBox="0 0 17 18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.5 0.875C6.01472 0.875 4 2.88972 4 5.375V7.375C4 9.86028 6.01472 11.875 8.5 11.875C10.9853 11.875 13 9.86028 13 7.375V5.375C13 2.88972 10.9853 0.875 8.5 0.875ZM6 5.375C6 3.99429 7.11929 2.875 8.5 2.875C9.88071 2.875 11 3.99429 11 5.375V7.375C11 8.75571 9.88071 9.875 8.5 9.875C7.11929 9.875 6 8.75571 6 7.375V5.375ZM3.5465 12.25C4.02963 11.9824 4.20437 11.3738 3.93679 10.8907C3.66921 10.4075 3.06063 10.2328 2.5775 10.5004C0.98671 11.3814 -0.000303903 13.0569 7.01913e-08 14.8754V16.8752C7.01913e-08 17.4275 0.447715 17.8752 1 17.8752H16C16.5523 17.8752 17 17.4275 17 16.8752V14.8752C17.0003 13.0567 16.0133 11.3814 14.4225 10.5004C13.9394 10.2328 13.3308 10.4075 13.0632 10.8907C12.7956 11.3738 12.9704 11.9824 13.4535 12.25C14.408 12.7786 15.0002 13.7841 15 14.8752V15.8752H2V14.875C1.99977 13.7838 2.59199 12.7786 3.5465 12.25Z"
+              />
+            </svg>
+          </div>
+          <div class="contact__form-field">
+            <input
+              type="email"
+              name="email"
+              class="contact__form--email"
+              placeholder="Email"
+            />
+            <svg
+              class="contact__form-svg"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.7071 0.667921C16.9776 0.938381 17.0701 1.33942 16.9454 1.70102L11.9454 16.201C11.8123 16.587 11.4579 16.8533 11.0502 16.8738C10.6424 16.8942 10.2631 16.6648 10.092 16.2941L7.09205 9.79409C6.91648 9.41369 6.99665 8.96417 7.2929 8.66792L10.2929 5.66792C10.6834 5.2774 11.3166 5.2774 11.7071 5.66792C12.0976 6.05844 12.0976 6.69161 11.7071 7.08213L9.20017 9.58908L10.8655 13.1974L14.3855 2.98954L4.17803 6.50936L6.40096 7.53502C6.90244 7.7664 7.1214 8.36051 6.89001 8.86198C6.65863 9.36346 6.06453 9.58242 5.56305 9.35103L1.08105 7.28303C0.710317 7.11198 0.480809 6.73271 0.501263 6.32493C0.521717 5.91715 0.788025 5.56276 1.17402 5.42965L15.674 0.429655C16.0356 0.304967 16.4367 0.397461 16.7071 0.667921Z"
+              />
+            </svg>
+          </div>
+          <div class="contact__form-field">
+            <textarea
+              name="message"
+              class="contact__form--msg"
+              placeholder="Message"
+            ></textarea>
+
+            <svg
+              class="contact__form-svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5 2.875C0.5 1.77072 1.39572 0.875 2.5 0.875H15.5C16.6043 0.875 17.5 1.77072 17.5 2.875V12.875C17.5 13.9793 16.6043 14.875 15.5 14.875H11.9684L9.76822 17.5152C9.57823 17.7432 9.29678 17.875 9 17.875C8.70322 17.875 8.42177 17.7432 8.23178 17.5152L6.03162 14.875H2.5C1.39572 14.875 0.5 13.9793 0.5 12.875V2.875ZM15.5 2.875H2.5V12.875H6.5C6.79678 12.875 7.07823 13.0068 7.26822 13.2348L9 15.313L10.7318 13.2348C10.9218 13.0068 11.2032 12.875 11.5 12.875H15.5V2.875ZM3.5 5.875C3.5 5.32272 3.94772 4.875 4.5 4.875H13.5C14.0523 4.875 14.5 5.32272 14.5 5.875C14.5 6.42728 14.0523 6.875 13.5 6.875H4.5C3.94772 6.875 3.5 6.42728 3.5 5.875ZM4.5 8.875C3.94772 8.875 3.5 9.32271 3.5 9.875C3.5 10.4273 3.94772 10.875 4.5 10.875H13.5C14.0523 10.875 14.5 10.4273 14.5 9.875C14.5 9.32271 14.0523 8.875 13.5 8.875H4.5Z"
+              />
+            </svg>
+          </div>
           <button class="contact__btn btn">
             <span class="contact__btn-text">Let's Talk</span>
             <svg
+              class="btn-arrow"
               width="22"
               height="16"
               viewBox="0 0 22 16"
@@ -328,33 +398,45 @@
     </main>
     <section class="footer center">
       <footer class="footer__content">
-        <svg
-          width="50"
-          height="34"
-          viewBox="0 0 50 34"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M17 0.548828L17 33.5488H0L0 0.548828L17 0.548828Z"
-            fill="#4C40F7"
-          />
-          <circle cx="33.5" cy="17.0488" r="16.5" fill="white" />
-        </svg>
+        <div class="footer__logo">
+          <svg
+            width="50"
+            height="34"
+            viewBox="0 0 50 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17 0.548828L17 33.5488H0L0 0.548828L17 0.548828Z"
+              fill="#4C40F7"
+            />
+            <circle cx="33.5" cy="17.0488" r="16.5" fill="white" />
+          </svg>
+        </div>
 
         <h2 class="footer__heading">
           You only have one chance to make a first impression.
         </h2>
         <h4 class="footer__subheading">Let's make it an amazing one!</h4>
         <div class="footer__menu">
-          <a href="" class="footer__link">What I Do</a>
-          <a href="" class="footer__link">About Me</a>
-          <a href="" class="footer__link">Projects</a>
-          <a href="" class="footer__link">Contact Me</a>
-          <a href="" class="footer__link">LinkedIn</a>
-          <a href="" class="footer__link">Github</a>
+          <a href="#whatIDo" class="footer__link">What I Do</a>
+          <a href="#aboutMe" class="footer__link">About Me</a>
+          <a href="#work" class="footer__link">Projects</a>
+          <a href="#contact" class="footer__link">Contact Me</a>
+          <a
+            href="https://www.linkedin.com/in/sheldrickmayrant/"
+            class="footer__link"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/smayrant"
+            target="_blank"
+            class="footer__link"
+            >Github</a
+          >
         </div>
         <div class="footer__circles"></div>
         <div class="footer__copyright">&copy; 2022, Sheldrick Mayrant</div>

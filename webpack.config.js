@@ -15,10 +15,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.resolve(
-        __dirname,
-        "src-------------------------------------------------------------------------------------- "
-      ),
+      directory: path.resolve(__dirname, "src"),
     },
     port: 3000,
     open: true,
@@ -51,9 +48,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Portfolio",
+      title: "Homepage",
       filename: "index.html",
       template: "src/template.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "Project 1",
+      filename: "project1.html",
+      template: "src/project1Temp.html",
     }),
     new MiniCssExtractPlugin(),
   ],

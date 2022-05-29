@@ -17,3 +17,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin purple-line{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 52px;
+  height: 2px;
+  background-color: variables.$main-purple;
+}

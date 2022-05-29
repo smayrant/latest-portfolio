@@ -1,0 +1,38 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.project {
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__subheading {
+    color: variables.$dark-gray;
+  }
+
+  &__overview {
+    position: relative;
+    &:before {
+      @include mixins.purple-line;
+      margin-top: 2rem;
+    }
+
+    &-text {
+      margin-top: 2rem;
+      color: variables.$dark-gray;
+      margin: 2rem 0 3rem 0;
+    }
+  }
+
+  &__tech {
+    position: relative;
+    &:before {
+      @include mixins.purple-line;
+      margin-top: 2rem;
+    }
+  }
+
+  &__btn:first-child {
+    margin-bottom: 1.5rem;
+  }
+}

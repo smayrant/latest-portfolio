@@ -26,12 +26,13 @@
   }
 
   &__item-text-container {
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 2rem 0.2rem;
   }
 
   &__item-title {
     font-size: 1.5em;
     margin: 0;
+    line-height: 1.3;
   }
 
   &__item-text {

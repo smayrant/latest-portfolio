@@ -1,4 +1,5 @@
 import "./styles/main.scss";
+import heroBG from "./img/hero-bg.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
 import pinkFig from "./img/bg-figure-pink.png";
 import ltPinkCube from "./img/lt-pink-cube.png";
@@ -11,8 +12,8 @@ import showPreview from "./img/showtrackr.jpg";
 import moviePreview from "./img/movie-seeker.jpg";
 import SGPreview from "./img/sgassociates.jpg";
 import fitPreview from "./img/fit4less.jpg";
+import contactBG from "./img/contact-bg.png";
 import footerBG from "./img/bg-footer.png";
-import heroBG from "./img/hero-bg.png";
 
 // hero images
 
@@ -76,8 +77,8 @@ const fit4less = document.querySelector(".fit4lessImg");
 fit4less.src = fitPreview;
 
 // contact images
-const contactCubeLg = document.querySelector(".contact__bg");
-contactCubeLg.src = whiteCubeLg;
+const contactBGImg = document.querySelector(".contact__bg");
+contactBGImg.src = contactBG;
 
 // footer images
 
