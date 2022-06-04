@@ -406,12 +406,17 @@ h6 {
   padding: 1rem 2.5rem;
   font-size: 13px;
   border-radius: 12px;
+  width: 100%;
 }
 
 .btn-arrow {
   margin-left: 0.7rem;
   position: relative;
   top: 2px;
+}
+
+.btn--pink {
+  background: #ffbcbc;
 }
 
 input,
@@ -498,9 +503,9 @@ textarea {
   max-width: 545px;
 }
 
-.btn-arrow {
-  width: 20px;
-  height: auto;
+.scroll {
+  display: inline-block;
+  width: 100%;
 }
 
 .about-me {
@@ -727,3 +732,49 @@ textarea:focus + svg {
 .footer__link, .footer__copyright {
   font-size: 0.8rem;
 }
+
+.project__title {
+  margin-bottom: 1rem;
+}
+.project__subheading {
+  color: #6b6b6b;
+}
+.project__overview {
+  position: relative;
+}
+.project__overview:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 52px;
+  height: 2px;
+  background-color: #4c40f7;
+  margin-top: 2rem;
+}
+.project__overview-text {
+  margin-top: 2rem;
+  color: #6b6b6b;
+  margin: 2rem 0 3rem 0;
+}
+.project__tech {
+  position: relative;
+}
+.project__tech:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 52px;
+  height: 2px;
+  background-color: #4c40f7;
+  margin-top: 2rem;
+}
+.project__tech-list {
+  margin-top: 2rem;
+}
+.project__btn:first-child {
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=bundle.css.map*/

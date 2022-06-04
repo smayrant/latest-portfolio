@@ -1,30 +1,31 @@
+@use "../utils/variables";
+
 .what-i-do {
   margin-top: 4rem;
   position: relative;
 
   &__intro-heading {
-    font-weight: 600;
-  }
-
-  &__cube-hr-container {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__hr {
-    width: 40%;
-    border: none;
-    height: 0;
-    box-shadow: 0 0 1px 0.1px #9f9fa9;
-    margin: 3rem 0 3rem 0;
-    margin-top: 3rem;
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 2rem;
+    }
   }
 
   &__pink-cube {
-    max-width: 300px;
+    width: 250px;
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 120px;
+
+    @media (min-width: variables.$md-breakPt) {
+      width: 400px;
+      right: -120px;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      top: 30px;
+      width: 700px;
+      right: -180px;
+    }
   }
 
   &__heading--lg {
@@ -32,23 +33,45 @@
     margin-top: 3rem;
     line-height: 1.3;
     margin-top: 6rem;
+
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 5rem;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      font-size: 6rem;
+    }
+  }
+
+  &__white-cube--sm {
+    display: none;
+    @media (min-width: variables.$md-breakPt) {
+      display: inline;
+      width: 80px;
+      position: absolute;
+      top: 40px;
+    }
   }
 
   &__white-cube {
     width: 120px;
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 70%;
+
+    @media (min-width: variables.$lg-breakPt) {
+      width: 220px;
+      right: 200px;
+    }
   }
 
   &__btn {
     display: block;
     width: 100%;
-    max-width: 545px;
-  }
-}
+    max-width: 405px;
 
-.btn-arrow {
-  width: 20px;
-  height: auto;
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 300px;
+    }
+  }
 }

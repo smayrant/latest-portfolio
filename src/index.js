@@ -1,5 +1,7 @@
 import "./styles/main.scss";
-import heroBG from "./img/hero-bg.png";
+import heroBG from "./img/blue-bg.svg";
+import lgHeroBG from "./img/lg-hero-bg.svg";
+import heroBGFigs from "./img/hero-bg-shapes.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
 import pinkFig from "./img/bg-figure-pink.png";
 import ltPinkCube from "./img/lt-pink-cube.png";
@@ -18,69 +20,122 @@ import footerBG from "./img/bg-footer.png";
 // hero images
 
 const heroImg = document.querySelector(".hero__img");
-heroImg.src = heroBG;
+if (heroImg !== null) {
+  heroImg.src = heroBG;
+}
+
+const heroImgLg = document.querySelector(".hero__img--lg");
+if (heroImgLg !== null) {
+  heroImgLg.src = lgHeroBG;
+}
+
+const heroFigs = document.querySelector(".hero__shapes");
+if (heroFigs !== null) {
+  heroFigs.src = heroBGFigs;
+}
 
 const smWhiteCube = document.querySelector(".hero__bg-cube-sm");
-smWhiteCube.src = whiteCube;
+if (smWhiteCube !== null) {
+  smWhiteCube.src = whiteCube;
+}
 
 const lgWhiteCube = document.querySelector(".hero__bg-cube-lg");
-lgWhiteCube.src = whiteCubeLg;
+if (lgWhiteCube !== null) {
+  lgWhiteCube.src = whiteCubeLg;
+}
 
 // What I Do figures
 
 const whatIDoCube = document.querySelector(".what-i-do__pink-cube");
-whatIDoCube.src = ltPinkCube;
+if (whatIDoCube !== null) {
+  whatIDoCube.src = ltPinkCube;
+}
+
+const whatIDoCubeWhiteSm = document.querySelector(".what-i-do__white-cube--sm");
+if (whatIDoCubeWhiteSm !== null) {
+  whatIDoCubeWhiteSm.src = whiteCube;
+}
 
 const whatIDoCubeWhite = document.querySelector(".what-i-do__white-cube");
-whatIDoCubeWhite.src = whiteCubeLg;
+if (whatIDoCubeWhite !== null) {
+  whatIDoCubeWhite.src = whiteCubeLg;
+}
 
 // About me section images
 const leftAboutMeCube = document.querySelector(".about-me__purple-cube--left");
-leftAboutMeCube.src = purpleCube;
+if (leftAboutMeCube !== null) {
+  leftAboutMeCube.src = purpleCube;
+}
 
 const rightAboutMeCube = document.querySelector(
   ".about-me__purple-cube--right"
 );
-rightAboutMeCube.src = purpleCube;
+if (rightAboutMeCube !== null) {
+  rightAboutMeCube.src = purpleCube;
+}
 
 const aboutMeOrangeBall = document.querySelector(".about-me__orange-ball");
-aboutMeOrangeBall.src = orangeBall;
+if (aboutMeOrangeBall !== null) {
+  aboutMeOrangeBall.src = orangeBall;
+}
 
 const aboutMePinkCube = document.querySelector(".about-me__pink-cube");
-aboutMePinkCube.src = pinkFig;
+if (aboutMePinkCube !== null) {
+  aboutMePinkCube.src = pinkFig;
+}
 
 const aboutMeBlueCube = document.querySelector(".about-me__blue-cube");
-aboutMeBlueCube.src = blueCube;
+if (aboutMeBlueCube !== null) {
+  aboutMeBlueCube.src = blueCube;
+}
 
 const aboutMePurpleBall = document.querySelector(".about-me__purple-ball");
-aboutMePurpleBall.src = purpleBall;
+if (aboutMePurpleBall !== null) {
+  aboutMePurpleBall.src = purpleBall;
+}
 
 const aboutMePurpleBall2 = document.querySelector(
   ".about-me__purple-ball--second"
 );
-aboutMePurpleBall2.src = purpleBall;
+if (aboutMePurpleBall2 !== null) {
+  aboutMePurpleBall2.src = purpleBall;
+}
 
 // Work Images
 const workCube = document.querySelector(".work__bg-cube");
-workCube.src = whiteCube;
+if (workCube !== null) {
+  workCube.src = whiteCube;
+}
 
 const showtrackr = document.querySelector(".showTrackrImg");
-showtrackr.src = showPreview;
+if (showtrackr !== null) {
+  showtrackr.src = showPreview;
+}
 
 const movieSeeker = document.querySelector(".movieSeekerImg");
-movieSeeker.src = moviePreview;
+if (movieSeeker !== null) {
+  movieSeeker.src = moviePreview;
+}
 
 const SGassociates = document.querySelector(".SGAssociatesImg");
-SGassociates.src = SGPreview;
+if (SGassociates !== null) {
+  SGassociates.src = SGPreview;
+}
 
 const fit4less = document.querySelector(".fit4lessImg");
-fit4less.src = fitPreview;
+if (fit4less !== null) {
+  fit4less.src = fitPreview;
+}
 
 // contact images
 const contactBGImg = document.querySelector(".contact__bg");
-contactBGImg.src = contactBG;
+if (contactBGImg !== null) {
+  contactBGImg.src = contactBG;
+}
 
 // footer images
 
 const bgFooter = document.querySelector(".footer");
-bgFooter.style.backgroundImage = `url("${footerBG}")`;
+if (bgFooter !== null) {
+  bgFooter.style.backgroundImage = `url("${footerBG}")`;
+}

@@ -1,4 +1,7 @@
+@use "../utils/variables";
+
 .hero {
+  padding-bottom: 2rem;
   &__intro {
     position: relative;
   }
@@ -8,10 +11,58 @@
     line-height: 1.5;
     letter-spacing: -1.55px;
     max-width: 250px;
+    @media (min-width: variables.$sm-breakPt) {
+      font-size: 2.5rem;
+      max-width: 320px;
+    }
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 2.9rem;
+      max-width: 380px;
+    }
+    @media (min-width: variables.$lg-breakPt) {
+      font-size: 3.5rem;
+      max-width: 450px;
+    }
+  }
+
+  &__img-container {
+    position: relative;
   }
 
   &__img {
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+
+    @media (min-width: variables.$md-breakPt) {
+      display: none;
+    }
+  }
+
+  &__img--lg {
+    width: 80%;
+    position: absolute;
+    bottom: 59px;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__shapes {
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    @media (min-width: variables.$md-breakPt) {
+      transform: translate(-25%, 30%);
+      width: 38%;
+      right: 17px;
+      bottom: 220px;
+      max-width: 325px;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      max-width: 500px;
+    }
   }
 
   &__bg-cube-sm {
@@ -19,6 +70,17 @@
     position: absolute;
     right: 50px;
     top: 80px;
+    @media (min-width: variables.$md-breakPt) {
+      right: 440px;
+      top: 130px;
+    }
+    @media (min-width: variables.$lg-breakPt) {
+      right: 500px;
+      width: 130px;
+    }
+    @media (min-width: variables.$xl-breakPt) {
+      right: 800px;
+    }
   }
 
   &__bg-cube-lg {
@@ -26,5 +88,36 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
+
+    @media (min-width: variables.$md-breakPt) {
+      right: 350px;
+      bottom: -70px;
+      transform: translate(-25%, 30%);
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      right: 500px;
+      width: 200px;
+    }
+
+    @media (min-width: variables.$xl-breakPt) {
+      right: 800px;
+    }
+  }
+}
+
+.scroll {
+  display: inline-block;
+  @media (min-width: variables.$md-breakPt) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    display: none;
+    margin-left: 1rem;
+    @media (min-width: variables.$md-breakPt) {
+      display: inline;
+    }
   }
 }

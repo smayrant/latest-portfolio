@@ -10,6 +10,9 @@ body {
   font-family: variables.$main-font, sans-serif;
   height: 100vh;
   line-height: 1.75;
+  @media (min-width: 780px) {
+    position: relative;
+  }
 }
 
 html,
@@ -19,7 +22,7 @@ body {
 
 // centering container
 .center {
-  max-width: 1300px;
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 32px;
 }

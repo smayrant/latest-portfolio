@@ -30,6 +30,10 @@
       @include mixins.purple-line;
       margin-top: 2rem;
     }
+
+    &-list {
+      margin-top: 2rem;
+    }
   }
 
   &__btn:first-child {

@@ -13,6 +13,7 @@ module.exports = {
     clean: true,
     assetModuleFilename: "[name][ext]",
   },
+  devtool: "source-map",
   devServer: {
     static: {
       directory: path.resolve(__dirname, "src"),
@@ -41,21 +42,31 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpe?g)$/i,
-        type: "asset",
+        type: "asset/resource",
         include: path.resolve(__dirname, "src/img"),
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Homepage",
       filename: "index.html",
       template: "src/template.html",
     }),
     new HtmlWebpackPlugin({
-      title: "Project 1",
       filename: "project1.html",
       template: "src/project1Temp.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "project2.html",
+      template: "src/project2Temp.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "project3.html",
+      template: "src/project3Temp.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "project4.html",
+      template: "src/project4Temp.html",
     }),
     new MiniCssExtractPlugin(),
   ],

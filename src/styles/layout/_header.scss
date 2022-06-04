@@ -1,6 +1,16 @@
+@use "../utils/variables";
+
 .header {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+
+  @media (min-width: variables.$xl-breakPt) {
+    max-width: 1600px;
+  }
+
+  &__burger-menu {
+    color: white;
+  }
 
   &__content {
     display: flex;
