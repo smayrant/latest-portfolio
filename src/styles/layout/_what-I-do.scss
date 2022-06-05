@@ -4,9 +4,20 @@
   margin-top: 4rem;
   position: relative;
 
+  @media (min-width: variables.$md-breakPt) {
+    margin-top: 2rem;
+  }
+
+  &__heading {
+    @media (min-width: variables.$md-breakPt) {
+      margin-bottom: 1rem;
+    }
+  }
+
   &__intro-heading {
     @media (min-width: variables.$md-breakPt) {
       font-size: 2rem;
+      margin-top: 0;
     }
   }
 
@@ -36,6 +47,7 @@
 
     @media (min-width: variables.$md-breakPt) {
       font-size: 5rem;
+      margin-top: 0;
     }
 
     @media (min-width: variables.$lg-breakPt) {
@@ -47,9 +59,10 @@
     display: none;
     @media (min-width: variables.$md-breakPt) {
       display: inline;
-      width: 80px;
+      width: 130px;
       position: absolute;
-      top: 40px;
+      top: 20px;
+      right: 150px;
     }
   }
 
@@ -59,8 +72,13 @@
     right: 5px;
     top: 70%;
 
-    @media (min-width: variables.$lg-breakPt) {
+    @media (min-width: variables.$md-breakPt) {
       width: 220px;
+      right: 200px;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      width: 260px;
       right: 200px;
     }
   }

@@ -41,11 +41,22 @@
   }
 
   &__img--lg {
-    width: 80%;
-    position: absolute;
-    bottom: 59px;
-    right: 0;
-    z-index: -1;
+    display: none;
+    @media (min-width: variables.$md-breakPt) {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: -150px;
+      right: -20px;
+      z-index: -1;
+      transform: translate(0, -18%);
+    }
+    @media (min-width: variables.$lg-breakPt) {
+      bottom: -250px;
+    }
+    @media (min-width: variables.$xl-breakPt) {
+      bottom: -280px;
+    }
   }
 
   &__shapes {
@@ -53,14 +64,10 @@
     bottom: 0;
     width: 85%;
     @media (min-width: variables.$md-breakPt) {
-      transform: translate(-25%, 30%);
-      width: 38%;
+      transform: translate(-10%, 30%);
+      width: 50%;
       right: 17px;
       bottom: 220px;
-      max-width: 325px;
-    }
-
-    @media (min-width: variables.$lg-breakPt) {
       max-width: 500px;
     }
   }
@@ -90,9 +97,10 @@
     bottom: 20px;
 
     @media (min-width: variables.$md-breakPt) {
-      right: 350px;
-      bottom: -70px;
+      left: 50px;
+      bottom: -90px;
       transform: translate(-25%, 30%);
+      width: 190px;
     }
 
     @media (min-width: variables.$lg-breakPt) {
@@ -111,6 +119,7 @@
   @media (min-width: variables.$md-breakPt) {
     display: flex;
     align-items: center;
+    margin-top: 160px;
   }
 
   &__text {

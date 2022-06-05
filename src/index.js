@@ -104,7 +104,7 @@ if (aboutMePurpleBall2 !== null) {
 // Work Images
 const workCube = document.querySelector(".work__bg-cube");
 if (workCube !== null) {
-  workCube.src = whiteCube;
+  workCube.src = ltPinkCube;
 }
 
 const showtrackr = document.querySelector(".showTrackrImg");
