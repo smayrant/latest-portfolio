@@ -5,11 +5,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    bundle: path.resolve(__dirname, "src/index.js"),
+    index: "./src/index.js",
+    project1: "./src/project1.js",
+    project2: "./src/project2.js",
+    project3: "./src/project3.js",
+    project4: "./src/project4.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name][contenthash].js",
+    filename: "[name].js",
     clean: true,
     assetModuleFilename: "[name][ext]",
   },
@@ -44,29 +48,37 @@ module.exports = {
         test: /\.(png|svg|jpe?g)$/i,
         type: "asset/resource",
         include: path.resolve(__dirname, "src/img"),
+        generator: {
+          filename: "dist/[name][ext]",
+        },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "src/template.html",
+      template: "src/index.html",
+      chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
       filename: "project1.html",
-      template: "src/project1Temp.html",
+      template: "src/project1.html",
+      chunks: ["project1"],
     }),
     new HtmlWebpackPlugin({
       filename: "project2.html",
-      template: "src/project2Temp.html",
+      template: "src/project2.html",
+      chunks: ["project2"],
     }),
     new HtmlWebpackPlugin({
       filename: "project3.html",
-      template: "src/project3Temp.html",
+      template: "src/project3.html",
+      chunks: ["project3"],
     }),
     new HtmlWebpackPlugin({
       filename: "project4.html",
-      template: "src/project4Temp.html",
+      template: "src/project4.html",
+      chunks: ["project4"],
     }),
     new MiniCssExtractPlugin(),
   ],

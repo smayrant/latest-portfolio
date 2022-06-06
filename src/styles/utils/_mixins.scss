@@ -18,7 +18,7 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin purple-line{
+@mixin purple-line {
   content: "";
   position: absolute;
   top: 50%;
@@ -26,4 +26,8 @@
   width: 52px;
   height: 2px;
   background-color: variables.$main-purple;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
 }

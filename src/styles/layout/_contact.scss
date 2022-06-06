@@ -1,20 +1,39 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .contact {
   margin: 3rem 0;
-  position: relative;
+
+  &__content-container {
+    position: relative;
+    @media (min-width: variables.$md-breakPt) {
+      @include mixins.box-shadow;
+      background-color: white;
+      padding: 3rem;
+      border-radius: 15px;
+    }
+  }
 
   &__bg {
     position: absolute;
     right: -15px;
-    top: -15px;
+    top: 9px;
     max-width: 70%;
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 625px;
+    }
+  }
+
+  &__heading--sm {
+    margin-bottom: 0;
   }
 
   &__heading--lg {
-    margin-top: 4rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     max-width: 70%;
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 3rem;
+    }
   }
 
   &__form {
