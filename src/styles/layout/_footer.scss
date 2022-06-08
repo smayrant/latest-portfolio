@@ -5,11 +5,28 @@
   background: no-repeat;
   background-position: bottom right;
   @include mixins.blue-bg-styling;
-  padding-bottom: 1em;
+  background-color: variables.$dark-blue;
+  padding-bottom: 1.5em;
   background-size: 250px;
+
+  @media (min-width: variables.$md-breakPt) {
+    padding-bottom: 5em;
+  }
+
+  &__content {
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 
   &__logo {
     margin-top: 2rem;
+  }
+
+  &__headings {
+    max-width: 430px;
+    margin: 0 auto;
   }
 
   &__heading {
@@ -44,10 +61,31 @@
     grid-template-columns: 120px 80px;
     grid-template-rows: 30px 30px;
     margin: 2rem 0;
+
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__link,
   &__copyright {
     font-size: 0.8rem;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      @media (min-width: variables.$md-breakPt) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  hr {
+    display: none;
+
+    @media (min-width: variables.$md-breakPt) {
+      display: inline;
+    }
   }
 }

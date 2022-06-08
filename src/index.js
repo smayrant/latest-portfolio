@@ -5,6 +5,7 @@ import heroBGFigs from "./img/hero-bg-shapes.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
 import pinkFig from "./img/bg-figure-pink.png";
 import ltPinkCube from "./img/lt-pink-cube.png";
+import ltPinkCubeHalf from "./img/lt-pink-cube-half.png";
 import purpleBall from "./img/bg-figure-purple-ball.png";
 import whiteCube from "./img/white-cube.png";
 import whiteCubeLg from "./img/white-cube-lg.png";
@@ -91,6 +92,9 @@ fit4less.src = fitPreview;
 // contact images
 const contactBGImg = document.querySelector(".contact__bg");
 contactBGImg.src = contactBG;
+
+const contactBGImg2 = document.querySelector(".contact__bg--lower");
+contactBGImg2.src = ltPinkCubeHalf;
 
 // footer images
 

@@ -2,7 +2,21 @@
 @use "../utils/mixins";
 
 .contact {
-  margin: 3rem 0;
+  margin: 4rem 0;
+  position: relative;
+
+  @media (min-width: variables.$md-breakPt) {
+    &:before {
+      content: "";
+      position: absolute;
+      height: 650px;
+      right: 0;
+      left: 0;
+      bottom: -100px;
+      background: variables.$dark-blue;
+      clip-path: polygon(0 440px, 100% 0, 100% 100%, 0 100%);
+    }
+  }
 
   &__content-container {
     position: relative;
@@ -22,6 +36,26 @@
     @media (min-width: variables.$md-breakPt) {
       max-width: 625px;
     }
+    @media (min-width: variables.$lg-breakPt) {
+      max-width: 700px;
+    }
+    @media (min-width: variables.$xl-breakPt) {
+      max-width: 800px;
+      right: 0;
+    }
+  }
+
+  &__bg--lower {
+    display: none;
+
+    @media (min-width: variables.$xl-breakPt) {
+      display: block;
+      width: 30%;
+      position: absolute;
+      right: 0;
+      bottom: -100px;
+      max-width: 300px;
+    }
   }
 
   &__heading--sm {
@@ -34,11 +68,15 @@
     @media (min-width: variables.$md-breakPt) {
       font-size: 3rem;
     }
+    @media (min-width: variables.$lg-breakPt) {
+      font-size: 3.5rem;
+    }
   }
 
   &__form {
     color: #8c8ca0;
     width: 100%;
+    max-width: 900px;
   }
 
   &__form-field {

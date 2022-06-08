@@ -8,6 +8,9 @@ if (contactBGImg !== null) {
   contactBGImg.src = contactBG;
 }
 
+const contactBGImg2 = document.querySelector(".contact__bg--lower");
+contactBGImg2.src = ltPinkCubeHalf;
+
 // footer images
 
 const bgFooter = document.querySelector(".footer");
