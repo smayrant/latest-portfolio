@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/project1.js":
+/***/ "./src/project2.js":
 /*!*************************!*\
-  !*** ./src/project1.js ***!
+  !*** ./src/project2.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/contact-bg.png */ \"./src/img/contact-bg.png\");\n/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ \"./src/img/lt-pink-cube-half.png\");\n/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/bg-footer.png */ \"./src/img/bg-footer.png\");\n/* harmony import */ var _img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/showtrackr.jpg */ \"./src/img/showtrackr.jpg\");\n\n\n\n\n // contact images\n\nvar contactBGImg = document.querySelector(\".contact__bg\");\ncontactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_1__;\nvar contactBGImg2 = document.querySelector(\".contact__bg--lower\");\ncontactBGImg2.src = _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_2__; // project image\n\nvar project1Img = document.querySelector(\".project__img--first\");\nproject1Img.src = _img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_4__;\nconsole.log(project1Img); // footer images\n\nvar bgFooter = document.querySelector(\".footer\");\nbgFooter.style.backgroundImage = \"url(\\\"\".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_3__, \"\\\")\");\n\n//# sourceURL=webpack://portfolio/./src/project1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/contact-bg.png */ \"./src/img/contact-bg.png\");\n/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ \"./src/img/lt-pink-cube-half.png\");\n/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/bg-footer.png */ \"./src/img/bg-footer.png\");\n\n\n\n // contact images\n\nvar contactBGImg = document.querySelector(\".contact__bg\");\n\nif (contactBGImg !== null) {\n  contactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_1__;\n} // const contactBGImg2 = document.querySelector(\".contact__bg--lower\");\n// contactBGImg2.src = ltPinkCubeHalf;\n// footer images\n\n\nvar bgFooter = document.querySelector(\".footer\");\n\nif (bgFooter !== null) {\n  bgFooter.style.backgroundImage = \"url(\\\"\".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_3__, \"\\\")\");\n}\n\n//# sourceURL=webpack://portfolio/./src/project2.js?");
 
 /***/ }),
 
@@ -57,16 +57,6 @@ eval("module.exports = __webpack_require__.p + \"dist/contact-bg.png\";\n\n//# s
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"dist/lt-pink-cube-half.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/lt-pink-cube-half.png?");
-
-/***/ }),
-
-/***/ "./src/img/showtrackr.jpg":
-/*!********************************!*\
-  !*** ./src/img/showtrackr.jpg ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"dist/showtrackr.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/showtrackr.jpg?");
 
 /***/ })
 
@@ -145,7 +135,7 @@ eval("module.exports = __webpack_require__.p + \"dist/showtrackr.jpg\";\n\n//# s
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/project1.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/project2.js");
 /******/ 	
 /******/ })()
 ;

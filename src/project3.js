@@ -1,6 +1,16 @@
 import "./styles/main.scss";
+import github from "./img/github-logo.png";
+import linkedin from "./img/linkedin.png";
 import contactBG from "./img/contact-bg.png";
+import ltPinkCubeHalf from "./img/lt-pink-cube-half.png";
 import footerBG from "./img/bg-footer.png";
+
+// header images
+const githubIcon3 = document.querySelector(".header__icon--github");
+githubIcon1.src = github;
+
+const linkedinIcon3 = document.querySelector(".header__icon--linkedin");
+linkedinIcon1.src = linkedin;
 
 // contact images
 const contactBGImg = document.querySelector(".contact__bg");

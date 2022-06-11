@@ -86,7 +86,7 @@
       width: 130px;
     }
     @media (min-width: variables.$xl-breakPt) {
-      right: 800px;
+      right: 600px;
     }
   }
 
@@ -97,7 +97,7 @@
     bottom: 20px;
 
     @media (min-width: variables.$md-breakPt) {
-      left: 50px;
+      left: 250px;
       bottom: -90px;
       transform: translate(-25%, 30%);
       width: 190px;

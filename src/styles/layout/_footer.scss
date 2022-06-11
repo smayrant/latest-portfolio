@@ -13,6 +13,10 @@
     padding-bottom: 5em;
   }
 
+  @media (min-width: variables.$xl-breakPt) {
+    background-size: 300px;
+  }
+
   &__content {
     @media (min-width: variables.$md-breakPt) {
       display: flex;
@@ -26,12 +30,15 @@
 
   &__headings {
     max-width: 430px;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
   &__heading {
     font-size: 2.2rem;
     line-height: 1.3;
+    @media (min-width: variables.$md-breakPt) {
+      margin-top: 0;
+    }
   }
 
   &__subheading {
@@ -47,13 +54,23 @@
     &:before {
       height: 600px;
       width: 600px;
-      // right: 15%;
       top: 0;
+      @media (min-width: variables.$md-breakPt) {
+        top: 410px;
+        height: 800px;
+        width: 800px;
+      }
     }
 
     &:after {
       height: 124px;
       width: 124px;
+
+      @media (min-width: variables.$md-breakPt) {
+        top: 410px;
+        height: 500px;
+        width: 500px;
+      }
     }
   }
   &__menu {
@@ -85,7 +102,8 @@
     display: none;
 
     @media (min-width: variables.$md-breakPt) {
-      display: inline;
+      display: block;
+      z-index: -5;
     }
   }
 }

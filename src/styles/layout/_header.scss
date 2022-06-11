@@ -8,6 +8,27 @@
     max-width: 1600px;
   }
 
+  &__nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__link:nth-of-type(2),
+  &__link:nth-of-type(3) {
+    display: none;
+    color: variables.$med-gray;
+    @media (min-width: variables.$md-breakPt) {
+      display: block;
+      margin-left: 2.1rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__icon {
+    margin-right: 12px;
+  }
+
   &__burger-menu {
     @media (min-width: variables.$md-breakPt) {
       color: white;
@@ -17,5 +38,11 @@
   &__content {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.project__menu {
+  @media (min-width: variables.$md-breakPt) {
+    color: variables.$dark-blue;
   }
 }

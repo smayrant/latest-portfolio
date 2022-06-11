@@ -25,7 +25,15 @@ body {
 .center {
   max-width: 1350px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 2rem;
+
+  @media (min-width: variables.$md-breakPt) {
+    padding: 0 3rem;
+  }
+
+  @media (min-width: variables.$lg-breakPt) {
+    padding: 0 3.5rem;
+  }
 }
 
 h1,
@@ -78,4 +86,10 @@ input,
 textarea {
   background-color: variables.$lt-gray;
   color: variables.$dark-blue;
+}
+
+// Unordered lists
+ul {
+  list-style: none;
+  padding-left: 0;
 }
