@@ -1,0 +1,48 @@
+@use "../utils/variables";
+
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 10;
+  &--left {
+    background-color: variables.$main-blue;
+    height: 100vh;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    &__logo {
+      svg {
+        margin-top: 2rem;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+
+  &--right {
+    position: absolute;
+    right: 0;
+  }
+
+  &__burger {
+    margin-top: 2rem;
+    position: absolute;
+    right: 0;
+  }
+
+  &__nav {
+    transform: translateY(35%);
+  }
+}

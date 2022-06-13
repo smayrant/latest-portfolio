@@ -1,7 +1,6 @@
 @use "../utils/variables";
 
 .header {
-  padding-top: 1.5rem;
   padding-bottom: 1rem;
 
   @media (min-width: variables.$xl-breakPt) {
@@ -25,10 +24,6 @@
     }
   }
 
-  &__icon {
-    margin-right: 12px;
-  }
-
   &__burger-menu {
     @media (min-width: variables.$md-breakPt) {
       color: white;
@@ -36,7 +31,8 @@
   }
 
   &__content {
-    display: flex;
+    padding-top: 2.25rem;
+    display: none; //change back to flex
     justify-content: space-between;
   }
 }

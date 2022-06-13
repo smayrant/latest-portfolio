@@ -1,0 +1,39 @@
+@use "../utils/variables";
+
+.main-nav--mobile {
+  display: none;
+  height: 100vh;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+  @media (min-width: variables.$xs-breakPt) {
+    background-size: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  &__social-link {
+    color: variables.$med-gray;
+    &:first-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+  svg {
+    margin-right: 1rem;
+  }
+}

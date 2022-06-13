@@ -1,6 +1,6 @@
 import "./styles/main.scss";
-import github from "./img/github-logo.png";
-import linkedin from "./img/linkedin.png";
+import mobileBGImg from "./img/bg-mobile.png";
+import menuImg from "./img/bg-menu.png";
 import heroBG from "./img/blue-bg.svg";
 import lgHeroBG from "./img/lg-hero-bg.svg";
 import heroBGFigs from "./img/hero-bg-shapes.png";
@@ -20,12 +20,13 @@ import fitPreview from "./img/fit4less.jpg";
 import contactBG from "./img/contact-bg.png";
 import footerBG from "./img/bg-footer.png";
 
-// header images
-const githubIcon = document.querySelector(".header__icon--github");
-githubIcon.src = github;
+// menu background
 
-const linkedinIcon = document.querySelector(".header__icon--linkedin");
-linkedinIcon.src = linkedin;
+const mobileBG = document.querySelector(".mobile-nav");
+mobileBG.style.backgroundImage = `url("${mobileBGImg}")`;
+
+const menuBG = document.querySelector(".main-menu__bg");
+menuBG.src = menuImg;
 
 // hero images
 
