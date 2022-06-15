@@ -1,5 +1,7 @@
 @use "../utils/variables";
 
+// styling common to the toggled mobile and tablet/desktop menus
+
 .main-nav {
   display: none;
 
@@ -11,11 +13,11 @@
   &__content {
     display: flex;
     flex-direction: column;
+  }
 
-    a {
-      font-size: 2rem;
-      font-weight: 600;
-    }
+  &__item {
+    font-size: 2rem;
+    font-weight: 600;
   }
 
   &__social {

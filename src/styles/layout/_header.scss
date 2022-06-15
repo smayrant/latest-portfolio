@@ -31,8 +31,8 @@
   }
 
   &__content {
-    padding-top: 2.25rem;
-    display: none; //change back to flex
+    padding-top: 2rem;
+    display: flex;
     justify-content: space-between;
   }
 }

@@ -109,3 +109,10 @@ contactBGImg2.src = ltPinkCubeHalf;
 
 const bgFooter = document.querySelector(".footer");
 bgFooter.style.backgroundImage = `url("${footerBG}")`;
+
+// burger menu toggle
+const burger = document.querySelector(".burger-menu");
+burger.addEventListener("click", function () {
+  const menu = document.querySelector(".toggle-menu");
+  menu.classList.toggle("inactive");
+});

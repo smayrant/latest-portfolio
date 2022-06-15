@@ -8,6 +8,7 @@
   bottom: 0;
   background-color: #fff;
   z-index: 10;
+
   &--left {
     background-color: variables.$main-blue;
     height: 100vh;
@@ -17,32 +18,117 @@
     left: 0;
     bottom: 0;
 
+    @media (min-width: variables.$lg-breakPt) {
+      width: 400px;
+    }
+
+    @media (min-width: variables.$xl-breakPt) {
+      width: 500px;
+    }
+
+    @media (min-width: variables.$xxl-breakPt) {
+      width: 600px;
+    }
+
     &__logo {
       svg {
         margin-top: 2rem;
       }
     }
+  }
+
+  &__bg-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
 
     img {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
+      max-width: 80%;
+      max-height: 100%;
+
+      @media (min-width: variables.$xl-breakPt) {
+        max-width: 100%;
+      }
     }
   }
 
   &--right {
     position: absolute;
     right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__burger-container {
+    margin-right: 2rem;
   }
 
   &__burger {
     margin-top: 2rem;
+    margin-right: 3rem;
     position: absolute;
     right: 0;
+    background-color: variables.$main-purple;
+    height: 48px;
+    width: 48px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+
+    @media (min-width: variables.$xl-breakPt) {
+      height: 64px;
+      width: 64px;
+      padding: 19px;
+    }
   }
 
   &__nav {
-    transform: translateY(35%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-30%);
+
+    @media (min-width: variables.$lg-breakPt) {
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: variables.$xl-breakPt) {
+      transform: translateX(-30%);
+    }
+  }
+
+  &__item {
+    font-size: 2.625rem;
+    font-weight: 600;
+    @media (min-width: variables.$lg-breakPt) {
+      font-size: 3.25rem;
+    }
+    @media (min-width: variables.$xl-breakPt) {
+      font-size: 4.5rem;
+    }
+  }
+
+  &__content {
+    justify-content: center;
+    margin-right: 5rem;
+  }
+
+  &__social {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    gap: 70px;
+
+    a {
+      color: variables.$med-gray;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 15px;
+      }
+    }
   }
 }

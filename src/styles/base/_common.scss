@@ -21,6 +21,15 @@ body {
   overflow-x: hidden;
 }
 
+// display toggles
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
 // centering container
 .center {
   max-width: 1350px;
@@ -43,6 +52,18 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+}
+
+// burger menu styling
+.burger-menu {
+  margin-top: 5px;
+}
+
+.burger__line {
+  width: 25px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: variables.$dark-blue;
 }
 
 // secondary headings
