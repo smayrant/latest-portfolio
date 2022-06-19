@@ -11,23 +11,31 @@ body {
   font-family: variables.$main-font, sans-serif;
   height: 100vh;
   line-height: 1.75;
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   @media (min-width: 780px) {
     position: relative;
   }
 }
 
-html,
-body {
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
   overflow-x: hidden;
 }
 
-// display toggles
-.active {
-  display: block;
-}
-
-.inactive {
-  display: none;
+// hide menu
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 // centering container
@@ -57,6 +65,7 @@ h6 {
 // burger menu styling
 .burger-menu {
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .burger__line {
@@ -113,4 +122,20 @@ textarea {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.burger__menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  clip-path: circle(50px at 100% -10%);
+  transition: all 1s ease-in-out;
+}
+
+.burger__menu--open {
+  clip-path: circle(4000px at 100% -10%);
 }

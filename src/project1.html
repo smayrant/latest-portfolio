@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Sheldrick Mayrant | Project 1</title>
   </head>
   <body>
-    <header class="header center">
-      <div class="header__content">
+    <header class="header">
+      <div class="header__content center">
         <nav class="header__nav">
           <a href="/" class="header__logo-link header__link">
             <svg
@@ -34,27 +35,272 @@
               />
             </svg>
           </a>
-          <a href="" target="_blank" class="header__link"
-            ><img
-              class="header__icon header__icon--github"
-              src=""
-              alt="Github icon"
-            />
+          <a
+            href="https://github.com/smayrant"
+            target="_blank"
+            class="header__link header__social-link"
+            ><svg
+              version="1.2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+            >
+              <title>github-logo</title>
+              <defs>
+                <image
+                  width="16"
+                  height="16"
+                  id="img1"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAMZQTFRFAAAAkpK2n5+qn5+pn5+pnp6pn5+pn5+pn5+on5+qn5+pn5+pn5+qoKCpn5+pn5+poqKun5+pnp6ooKCon5+nm5umoKCqoKCqoKCpn5+qn5+pn5+qoKCqn5+pn5+pn5+pn5+p////n5+pn5+pf3+/n5+poaGqn5+pn5+qn5+plZWqn5+poKConp6poKCpn5+pnp6pn5+soaGon5+pnp6pn5+pn5+pnZ2nn5+pnJytoqKqoaGqqqqqnZ2nf39/np6pn5+poKCqYEZ1kQAAAEJ0Uk5TAAddnb1c6v+Qj2fgofP0nxb3mUMgF5t7o6R6yDM1x+jyAfj6BOE236fADKVGkdPefCUmfUS38DTSHx4bAxoCX7Sz2V0rxAAAALBJREFUeJxNj9cSgkAQBMcAYxYFzAnFHDCBOf3/T7knYjkPV9VTt3t9gCQWTySTiXgM32g6P9G1kFP8Ja04w2wur6hQzDIDGCWWYZiWZdqosGSgStaiZXWygSbZioo22UGXPScqnB676HPgRoU7YB9DcvQ3MsaEnM5Cnk3JORZcrrz1BtjuPJHZA35wOAYnKZScLxdtzz+rb7nCnqFGL6IiD11F4hYuuz+ed5F4PeTEG3LuDpW/hIiXAAAAAElFTkSuQmCC"
+                />
+              </defs>
+
+              <use id="Background" href="#img1" x="0" y="0" />
+            </svg>
             Github</a
           >
 
-          <a href="" target="_blank" class="header__link"
-            ><img
-              class="header__icon header__icon--linkedin"
-              src=""
-              alt="LinkedIn icon"
-            />
+          <a
+            href="https://www.linkedin.com/in/sheldrickmayrant/"
+            target="_blank"
+            class="header__link header__social-link"
+            ><svg
+              version="1.2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+            >
+              <title>linkedin</title>
+              <defs>
+                <image
+                  width="16"
+                  height="16"
+                  id="img2"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAIdQTFRFoaGqn5+pn5+pn5+pn5+pn5+pn5+qnZ2xn5+pm5umAAAAnp6on5+poKCpn5+pn5+qnp6pnp6qn5+ooKCqnp6on5+pn5+ooKCpn5+pqqqqn5+pnp6qn5+pnp6pnJytn5+qn5+plZWqnp6pn5+pqqqqn5+qn5+poKCqoKCp////mZmqn5+pnp6nf9QaWAAAAC10Uk5TOdb/1Tj+bw2fFwBMrFPNj0S2VZ5k7liLaANiKuZ5H3XEDHzMCWCUg9MBD9Q3r6JLngAAAHBJREFUeJxjYGBkQgLMLKh8oAgDK6oAKwOQYGPnQIiABDi5uFEFeHj5UAX4BQQ5hIRFGEREoQJiXOISXJJcXFxSyALSMrJccsgC8kwKXIrIAkpMylwquARUudTYuNSZNDS1QAIYTkfznDYDCzMKXwcAWjYHyqpwP5IAAAAASUVORK5CYII="
+                />
+              </defs>
+
+              <use id="Background2" href="#img2" x="0" y="0" />
+            </svg>
             LinkedIn</a
           >
         </nav>
-        <div class="header__burger-menu project__menu">X</div>
+        <div
+          class="header__burger-menu header__burger-menu--main project__burger"
+        >
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+        <div class="header__burger-menu header__burger-menu--mobile">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
       </div>
     </header>
+    <div class="burger__menu-container hidden">
+      <div class="mobile-nav">
+        <header class="header">
+          <div class="header__content center">
+            <nav class="header__nav">
+              <a href="/" class="header__logo-link header__link">
+                <svg
+                  width="34"
+                  height="22"
+                  viewBox="0 0 34 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="11.2188"
+                    width="22"
+                    height="11.2184"
+                    transform="rotate(90 11.2188 0)"
+                    fill="#FFBDBD"
+                  />
+                  <ellipse
+                    cx="22.4371"
+                    cy="11"
+                    rx="11.2184"
+                    ry="11"
+                    fill="#4C40F7"
+                  />
+                </svg>
+              </a>
+            </nav>
+            <div class="header__burger-menu mobile-burger">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div>
+          </div>
+        </header>
+        <nav class="mobile-nav__content center">
+          <a href="/#whatIDo" class="mobile-nav__item">What I Do</a>
+          <a href="/#aboutMe" class="mobile-nav__item">About me</a>
+          <a href="/#work" class="mobile-nav__item">My Work</a>
+          <a href="#contact" class="mobile-nav__item">Contact Me</a>
+        </nav>
+        <div class="mobile-nav__social center">
+          <a
+            href="https://github.com/smayrant"
+            target="_blank"
+            class="mobile-nav__social-link"
+            ><svg
+              version="1.2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+            >
+              <title>github-logo</title>
+              <defs>
+                <image
+                  width="16"
+                  height="16"
+                  id="img1"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAMZQTFRFAAAAkpK2n5+qn5+pn5+pnp6pn5+pn5+pn5+on5+qn5+pn5+pn5+qoKCpn5+pn5+poqKun5+pnp6ooKCon5+nm5umoKCqoKCqoKCpn5+qn5+pn5+qoKCqn5+pn5+pn5+pn5+p////n5+pn5+pf3+/n5+poaGqn5+pn5+qn5+plZWqn5+poKConp6poKCpn5+pnp6pn5+soaGon5+pnp6pn5+pn5+pnZ2nn5+pnJytoqKqoaGqqqqqnZ2nf39/np6pn5+poKCqYEZ1kQAAAEJ0Uk5TAAddnb1c6v+Qj2fgofP0nxb3mUMgF5t7o6R6yDM1x+jyAfj6BOE236fADKVGkdPefCUmfUS38DTSHx4bAxoCX7Sz2V0rxAAAALBJREFUeJxNj9cSgkAQBMcAYxYFzAnFHDCBOf3/T7knYjkPV9VTt3t9gCQWTySTiXgM32g6P9G1kFP8Ja04w2wur6hQzDIDGCWWYZiWZdqosGSgStaiZXWygSbZioo22UGXPScqnB676HPgRoU7YB9DcvQ3MsaEnM5Cnk3JORZcrrz1BtjuPJHZA35wOAYnKZScLxdtzz+rb7nCnqFGL6IiD11F4hYuuz+ed5F4PeTEG3LuDpW/hIiXAAAAAElFTkSuQmCC"
+                />
+              </defs>
+              <style></style>
+              <use id="Background" href="#img1" x="0" y="0" />
+            </svg>
+            Github</a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/sheldrickmayrant/"
+            target="_blank"
+            class="mobile-nav__social-link"
+            ><svg
+              version="1.2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+            >
+              <title>linkedin</title>
+              <defs>
+                <image
+                  width="16"
+                  height="16"
+                  id="img2"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAIdQTFRFoaGqn5+pn5+pn5+pn5+pn5+pn5+qnZ2xn5+pm5umAAAAnp6on5+poKCpn5+pn5+qnp6pnp6qn5+ooKCqnp6on5+pn5+ooKCpn5+pqqqqn5+pnp6qn5+pnp6pnJytn5+qn5+plZWqnp6pn5+pqqqqn5+qn5+poKCqoKCp////mZmqn5+pnp6nf9QaWAAAAC10Uk5TOdb/1Tj+bw2fFwBMrFPNj0S2VZ5k7liLaANiKuZ5H3XEDHzMCWCUg9MBD9Q3r6JLngAAAHBJREFUeJxjYGBkQgLMLKh8oAgDK6oAKwOQYGPnQIiABDi5uFEFeHj5UAX4BQQ5hIRFGEREoQJiXOISXJJcXFxSyALSMrJccsgC8kwKXIrIAkpMylwquARUudTYuNSZNDS1QAIYTkfznDYDCzMKXwcAWjYHyqpwP5IAAAAASUVORK5CYII="
+                />
+              </defs>
+
+              <use id="Background2" href="#img2" x="0" y="0" />
+            </svg>
+            LinkedIn</a
+          >
+        </div>
+      </div>
+      <div class="main-menu">
+        <div class="main-menu--left">
+          <a href="" class="main-menu--left__logo center">
+            <svg
+              width="174"
+              height="32"
+              viewBox="0 0 174 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M77.38 10.96V13.7H71.66V16.66H75.94V19.32H71.66V25H68.24V10.96H77.38ZM92.9084 25.14C91.5884 25.14 90.3751 24.8333 89.2684 24.22C88.1751 23.6067 87.3017 22.7533 86.6484 21.66C86.0084 20.5533 85.6884 19.3133 85.6884 17.94C85.6884 16.5667 86.0084 15.3333 86.6484 14.24C87.3017 13.1467 88.1751 12.2933 89.2684 11.68C90.3751 11.0667 91.5884 10.76 92.9084 10.76C94.2284 10.76 95.4351 11.0667 96.5284 11.68C97.6351 12.2933 98.5017 13.1467 99.1284 14.24C99.7684 15.3333 100.088 16.5667 100.088 17.94C100.088 19.3133 99.7684 20.5533 99.1284 21.66C98.4884 22.7533 97.6217 23.6067 96.5284 24.22C95.4351 24.8333 94.2284 25.14 92.9084 25.14ZM92.9084 22.02C94.0284 22.02 94.9217 21.6467 95.5884 20.9C96.2684 20.1533 96.6084 19.1667 96.6084 17.94C96.6084 16.7 96.2684 15.7133 95.5884 14.98C94.9217 14.2333 94.0284 13.86 92.9084 13.86C91.7751 13.86 90.8684 14.2267 90.1884 14.96C89.5217 15.6933 89.1884 16.6867 89.1884 17.94C89.1884 19.18 89.5217 20.1733 90.1884 20.92C90.8684 21.6533 91.7751 22.02 92.9084 22.02ZM112.502 22.36H116.982V25H109.082V10.96H112.502V22.36ZM129.124 10.96V25H125.704V10.96H129.124ZM145.333 25.14C144.013 25.14 142.8 24.8333 141.693 24.22C140.6 23.6067 139.727 22.7533 139.073 21.66C138.433 20.5533 138.113 19.3133 138.113 17.94C138.113 16.5667 138.433 15.3333 139.073 14.24C139.727 13.1467 140.6 12.2933 141.693 11.68C142.8 11.0667 144.013 10.76 145.333 10.76C146.653 10.76 147.86 11.0667 148.953 11.68C150.06 12.2933 150.927 13.1467 151.553 14.24C152.193 15.3333 152.513 16.5667 152.513 17.94C152.513 19.3133 152.193 20.5533 151.553 21.66C150.913 22.7533 150.047 23.6067 148.953 24.22C147.86 24.8333 146.653 25.14 145.333 25.14ZM145.333 22.02C146.453 22.02 147.347 21.6467 148.013 20.9C148.693 20.1533 149.033 19.1667 149.033 17.94C149.033 16.7 148.693 15.7133 148.013 14.98C147.347 14.2333 146.453 13.86 145.333 13.86C144.2 13.86 143.293 14.2267 142.613 14.96C141.947 15.6933 141.613 16.6867 141.613 17.94C141.613 19.18 141.947 20.1733 142.613 20.92C143.293 21.6533 144.2 22.02 145.333 22.02Z"
+                  fill="white"
+                />
+                <path
+                  d="M163.107 25.16C162.507 25.16 162.014 24.9867 161.627 24.64C161.254 24.28 161.067 23.84 161.067 23.32C161.067 22.7867 161.254 22.34 161.627 21.98C162.014 21.62 162.507 21.44 163.107 21.44C163.694 21.44 164.174 21.62 164.547 21.98C164.934 22.34 165.127 22.7867 165.127 23.32C165.127 23.84 164.934 24.28 164.547 24.64C164.174 24.9867 163.694 25.16 163.107 25.16Z"
+                  fill="#FF6800"
+                />
+                <rect
+                  x="16"
+                  width="32"
+                  height="16"
+                  transform="rotate(90 16 0)"
+                  fill="#FFBDBD"
+                />
+                <circle cx="32" cy="16" r="16" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="174" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <div class="main-menu__bg-container">
+            <img src="" alt="main menu background" class="main-menu__bg" />
+          </div>
+        </div>
+        <div class="main-menu--right">
+          <div class="main-menu__burger-container center burger-menu">
+            <div class="main-menu__burger center burger-menu">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div>
+          </div>
+          <div class="main-nav main-menu__nav">
+            <nav class="main-nav__content main-menu__content">
+              <a href="/#whatIDo" class="main-menu__item">What I Do</a>
+              <a href="/#aboutMe" class="main-menu__item">About me</a>
+              <a href="/#work" class="main-menu__item">My Work</a>
+              <a href="#contact" class="main-menu__item">Contact Me</a>
+            </nav>
+            <div class="main-menu__social">
+              <a href="https://github.com/smayrant" target="_blank"
+                ><svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <title>github-logo</title>
+                  <defs>
+                    <image
+                      width="16"
+                      height="16"
+                      id="img1"
+                      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAMZQTFRFAAAAkpK2n5+qn5+pn5+pnp6pn5+pn5+pn5+on5+qn5+pn5+pn5+qoKCpn5+pn5+poqKun5+pnp6ooKCon5+nm5umoKCqoKCqoKCpn5+qn5+pn5+qoKCqn5+pn5+pn5+pn5+p////n5+pn5+pf3+/n5+poaGqn5+pn5+qn5+plZWqn5+poKConp6poKCpn5+pnp6pn5+soaGon5+pnp6pn5+pn5+pnZ2nn5+pnJytoqKqoaGqqqqqnZ2nf39/np6pn5+poKCqYEZ1kQAAAEJ0Uk5TAAddnb1c6v+Qj2fgofP0nxb3mUMgF5t7o6R6yDM1x+jyAfj6BOE236fADKVGkdPefCUmfUS38DTSHx4bAxoCX7Sz2V0rxAAAALBJREFUeJxNj9cSgkAQBMcAYxYFzAnFHDCBOf3/T7knYjkPV9VTt3t9gCQWTySTiXgM32g6P9G1kFP8Ja04w2wur6hQzDIDGCWWYZiWZdqosGSgStaiZXWygSbZioo22UGXPScqnB676HPgRoU7YB9DcvQ3MsaEnM5Cnk3JORZcrrz1BtjuPJHZA35wOAYnKZScLxdtzz+rb7nCnqFGL6IiD11F4hYuuz+ed5F4PeTEG3LuDpW/hIiXAAAAAElFTkSuQmCC"
+                    />
+                  </defs>
+                  <style></style>
+                  <use id="Background" href="#img1" x="0" y="0" />
+                </svg>
+                Github</a
+              >
+
+              <a
+                href="https://www.linkedin.com/in/sheldrickmayrant/"
+                target="_blank"
+                ><svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <title>linkedin</title>
+                  <defs>
+                    <image
+                      width="16"
+                      height="16"
+                      id="img2"
+                      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAIdQTFRFoaGqn5+pn5+pn5+pn5+pn5+pn5+qnZ2xn5+pm5umAAAAnp6on5+poKCpn5+pn5+qnp6pnp6qn5+ooKCqnp6on5+pn5+ooKCpn5+pqqqqn5+pnp6qn5+pnp6pnJytn5+qn5+plZWqnp6pn5+pqqqqn5+qn5+poKCqoKCp////mZmqn5+pnp6nf9QaWAAAAC10Uk5TOdb/1Tj+bw2fFwBMrFPNj0S2VZ5k7liLaANiKuZ5H3XEDHzMCWCUg9MBD9Q3r6JLngAAAHBJREFUeJxjYGBkQgLMLKh8oAgDK6oAKwOQYGPnQIiABDi5uFEFeHj5UAX4BQQ5hIRFGEREoQJiXOISXJJcXFxSyALSMrJccsgC8kwKXIrIAkpMylwquARUudTYuNSZNDS1QAIYTkfznDYDCzMKXwcAWjYHyqpwP5IAAAAASUVORK5CYII="
+                    />
+                  </defs>
+
+                  <use id="Background2" href="#img2" x="0" y="0" />
+                </svg>
+                LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
       <section class="project">
         <div class="center">
@@ -87,7 +333,7 @@
         </div>
         <div class="project__links center">
           <a href="" class="project__link">
-            <button class="project__btn btn">
+            <button data-aos="fade-right" class="project__btn btn">
               <span>View Project</span>
               <svg
                 class="btn-arrow"
@@ -115,7 +361,7 @@
             </button>
           </a>
           <a href="" class="project__link">
-            <button class="project__btn btn btn--pink">
+            <button data-aos="fade-left" class="project__btn btn btn--pink">
               <span>View Github</span>
               <svg
                 class="btn-arrow"
@@ -145,8 +391,8 @@
         </div>
         <div class="project__details center">
           <div class="project__overview-text-container">
-            <h4 class="project__overview">Overview</h4>
-            <p class="project__overview-text">
+            <h4 data-aos="fade-right" class="project__overview">Overview</h4>
+            <p data-aos="fade-up" class="project__overview-text">
               Showtrackr is a landing page created from an online design.
               Animation was added to the page to give it some interactivity.
             </p>
@@ -156,24 +402,47 @@
           <div class="project__discover-img"></div>
           <div class="project__discover-content center">
             <div class="project__discover-content-container--outer">
-              <h2 class="project__discover-heading">Discover.</h2>
+              <h2 data-aos="fade-right" class="project__discover-heading">
+                Discover.
+              </h2>
               <div class="project__discover-content-container--inner">
                 <div class="project__discover-highlights-container">
-                  <h5 class="project__discover-subheading">Highlights.</h5>
+                  <h5
+                    data-aos="fade-right"
+                    class="project__discover-subheading"
+                  >
+                    Highlights.
+                  </h5>
                   <ul class="project__discover-list">
-                    <li>Fully Responsive</li>
-                    <li>Mobile First Design</li>
-                    <li>Valid HTML5 and CSS3</li>
-                    <li>ES6+ JavaScript</li>
+                    <li data-aos="fade-right" data-aos-delay="50">
+                      Fully Responsive
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="150">
+                      Mobile First Design
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="300">
+                      Valid HTML5 and CSS3
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="450">
+                      ES6+ JavaScript
+                    </li>
                   </ul>
                 </div>
                 <div class="project__discover-Features-container">
-                  <h5 class="project__discover-subheading">Features.</h5>
+                  <h5 data-aos="fade-left" class="project__discover-subheading">
+                    Features.
+                  </h5>
                   <ul class="project__discover-list">
-                    <li>Google Lighthouse Optimization</li>
-                    <li>Cache optimization</li>
-                    <li>Animations</li>
-                    <li>Parallax</li>
+                    <li data-aos="fade-left" data-aos-delay="50">
+                      Google Lighthouse Optimization
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="150">
+                      Cache optimization
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="300">
+                      Animations
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="450">Parallax</li>
                   </ul>
                 </div>
               </div>
@@ -194,13 +463,18 @@
               alt="contact form background figure"
               class="contact__bg"
             />
-            <h6 class="contact__heading--sm secondary-heading">Say Hello 👋</h6>
-            <h2 class="contact__heading--lg">
+            <h6
+              data-aos="fade-down"
+              class="contact__heading--sm secondary-heading"
+            >
+              Say Hello 👋
+            </h6>
+            <h2 data-aos="fade-down" class="contact__heading--lg">
               <span>Let's Work</span>
               <br />
               <span>Together.</span>
             </h2>
-            <form action="" class="contact__form">
+            <form data-aos="fade-up" action="" class="contact__form">
               <div class="contact__form-field">
                 <input
                   type="text"
@@ -349,5 +623,12 @@
         <div class="footer__copyright">&copy; 2022, Sheldrick Mayrant</div>
       </footer>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 500,
+      });
+    </script>
   </body>
 </html>

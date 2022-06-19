@@ -13,8 +13,7 @@
     align-items: center;
   }
 
-  &__link:nth-of-type(2),
-  &__link:nth-of-type(3) {
+  &__social-link {
     display: none;
     color: variables.$med-gray;
     @media (min-width: variables.$md-breakPt) {
@@ -24,9 +23,25 @@
     }
   }
 
-  &__burger-menu {
+  &__link--mobile {
+    display: none;
+  }
+
+  &__burger-menu--main {
+    display: none;
+    cursor: pointer;
     @media (min-width: variables.$md-breakPt) {
-      color: white;
+      display: block;
+      .burger__line {
+        background-color: white;
+      }
+    }
+  }
+
+  &__burger-menu--mobile {
+    display: block;
+    @media (min-width: variables.$md-breakPt) {
+      display: none;
     }
   }
 

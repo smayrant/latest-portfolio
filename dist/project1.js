@@ -16,7 +16,7 @@
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/contact-bg.png */ \"./src/img/contact-bg.png\");\n/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ \"./src/img/lt-pink-cube-half.png\");\n/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/bg-footer.png */ \"./src/img/bg-footer.png\");\n/* harmony import */ var _img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/showtrackr.jpg */ \"./src/img/showtrackr.jpg\");\n\n\n\n\n // contact images\n\nvar contactBGImg = document.querySelector(\".contact__bg\");\ncontactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_1__;\nvar contactBGImg2 = document.querySelector(\".contact__bg--lower\");\ncontactBGImg2.src = _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_2__; // project image\n\nvar project1Img = document.querySelector(\".project__img--first\");\nproject1Img.src = _img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_4__;\nconsole.log(project1Img); // footer images\n\nvar bgFooter = document.querySelector(\".footer\");\nbgFooter.style.backgroundImage = \"url(\\\"\".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_3__, \"\\\")\");\n\n//# sourceURL=webpack://portfolio/./src/project1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/bg-mobile.png */ \"./src/img/bg-mobile.png\");\n/* harmony import */ var _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/bg-menu.png */ \"./src/img/bg-menu.png\");\n/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/contact-bg.png */ \"./src/img/contact-bg.png\");\n/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ \"./src/img/lt-pink-cube-half.png\");\n/* harmony import */ var _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/discover-bg.png */ \"./src/img/discover-bg.png\");\n/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/bg-footer.png */ \"./src/img/bg-footer.png\");\n\n\n\n\n\n\n // menu background\n\nvar mobileBG = document.querySelector(\".mobile-nav\");\nmobileBG.style.backgroundImage = \"url(\\\"\".concat(_img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__, \"\\\")\");\nvar menuBG = document.querySelector(\".main-menu__bg\");\nmenuBG.src = _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__; // contact images\n\nvar contactBGImg = document.querySelector(\".contact__bg\");\ncontactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_3__;\nvar contactBGImg2 = document.querySelector(\".contact__bg--lower\");\ncontactBGImg2.src = _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_4__; // project image\n\nvar project1Img = document.querySelector(\".project__img--first\");\nproject1Img.style.backgroundImage = \"url(./img/showtrackr.jpg)\";\nvar project1BGImg = document.querySelector(\".project__discover-img\");\nproject1BGImg.style.backgroundImage = \"url(./img/showtrackr.jpg)\";\nvar project1BGFig = document.querySelector(\".project__discover-img--figure\");\nproject1BGFig.src = _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_5__; // footer images\n\nvar bgFooter = document.querySelector(\".footer\");\nbgFooter.style.backgroundImage = \"url(\\\"\".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_6__, \"\\\")\"); // burger menu toggle\n\nvar openedBurgerMobile = document.querySelector(\".mobile-burger\");\nvar openedBurger = document.querySelector(\".main-menu__burger\");\nvar closedBurgerMobile = document.querySelector(\".header__burger-menu--mobile\");\nvar closedBurger = document.querySelector(\".header__burger-menu--main\");\nvar menuList = document.querySelector(\".main-menu__content\");\nvar mobileMenuList = document.querySelector(\".mobile-nav__content\");\nvar burgerMenuContainer = document.querySelector(\".burger__menu-container\");\n\nfunction toggleVisibility() {\n  burgerMenuContainer.classList.toggle(\"hidden\");\n}\n\nmenuList.addEventListener(\"click\", toggleVisibility);\nmobileMenuList.addEventListener(\"click\", toggleVisibility);\nopenedBurgerMobile.addEventListener(\"click\", toggleVisibility);\nopenedBurger.addEventListener(\"click\", toggleVisibility);\nclosedBurgerMobile.addEventListener(\"click\", toggleVisibility);\nclosedBurger.addEventListener(\"click\", toggleVisibility);\n\n//# sourceURL=webpack://portfolio/./src/project1.js?");
 
 /***/ }),
 
@@ -40,6 +40,26 @@ eval("module.exports = __webpack_require__.p + \"dist/bg-footer.png\";\n\n//# so
 
 /***/ }),
 
+/***/ "./src/img/bg-menu.png":
+/*!*****************************!*\
+  !*** ./src/img/bg-menu.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"dist/bg-menu.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-menu.png?");
+
+/***/ }),
+
+/***/ "./src/img/bg-mobile.png":
+/*!*******************************!*\
+  !*** ./src/img/bg-mobile.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"dist/bg-mobile.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-mobile.png?");
+
+/***/ }),
+
 /***/ "./src/img/contact-bg.png":
 /*!********************************!*\
   !*** ./src/img/contact-bg.png ***!
@@ -50,6 +70,16 @@ eval("module.exports = __webpack_require__.p + \"dist/contact-bg.png\";\n\n//# s
 
 /***/ }),
 
+/***/ "./src/img/discover-bg.png":
+/*!*********************************!*\
+  !*** ./src/img/discover-bg.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"dist/discover-bg.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/discover-bg.png?");
+
+/***/ }),
+
 /***/ "./src/img/lt-pink-cube-half.png":
 /*!***************************************!*\
   !*** ./src/img/lt-pink-cube-half.png ***!
@@ -57,16 +87,6 @@ eval("module.exports = __webpack_require__.p + \"dist/contact-bg.png\";\n\n//# s
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"dist/lt-pink-cube-half.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/lt-pink-cube-half.png?");
-
-/***/ }),
-
-/***/ "./src/img/showtrackr.jpg":
-/*!********************************!*\
-  !*** ./src/img/showtrackr.jpg ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"dist/showtrackr.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/showtrackr.jpg?");
 
 /***/ })
 

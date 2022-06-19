@@ -111,8 +111,29 @@ const bgFooter = document.querySelector(".footer");
 bgFooter.style.backgroundImage = `url("${footerBG}")`;
 
 // burger menu toggle
-const burger = document.querySelector(".burger-menu");
-burger.addEventListener("click", function () {
-  const menu = document.querySelector(".toggle-menu");
-  menu.classList.toggle("inactive");
-});
+const openedBurgerMobile = document.querySelector(".mobile-burger");
+const openedBurger = document.querySelector(".main-menu__burger");
+const closedBurgerMobile = document.querySelector(
+  ".header__burger-menu--mobile"
+);
+const closedBurger = document.querySelector(".header__burger-menu--main");
+const menuList = document.querySelector(".main-menu__content");
+const mobileMenuList = document.querySelector(".mobile-nav__content");
+const burgerMenuContainer = document.querySelector(".burger__menu-container");
+
+function toggleVisibility() {
+  burgerMenuContainer.classList.toggle("hidden");
+  burgerMenuContainer.classList.add("burger__menu--open");
+}
+
+menuList.addEventListener("click", toggleVisibility);
+
+mobileMenuList.addEventListener("click", toggleVisibility);
+
+openedBurgerMobile.addEventListener("click", toggleVisibility);
+
+openedBurger.addEventListener("click", toggleVisibility);
+
+closedBurgerMobile.addEventListener("click", toggleVisibility);
+
+closedBurger.addEventListener("click", toggleVisibility);

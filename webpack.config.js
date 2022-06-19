@@ -30,7 +30,12 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
         include: path.resolve(__dirname, "src/styles"),
       },
       {
@@ -80,5 +85,6 @@ module.exports = {
       chunks: ["project4"],
     }),
     new MiniCssExtractPlugin(),
+    require("autoprefixer"),
   ],
 };

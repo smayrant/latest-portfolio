@@ -2,6 +2,12 @@
 @use "../utils/mixins";
 
 .project {
+  &__burger {
+    .burger__line {
+      background-color: variables.$dark-blue;
+    }
+  }
+
   &__title {
     margin-bottom: 1rem;
   }

@@ -1,11 +1,12 @@
 @use "../utils/variables";
 
 .main-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: none;
+
+  @media (min-width: variables.$md-breakPt) {
+    display: block;
+  }
+
   background-color: #fff;
   z-index: 10;
 
@@ -71,8 +72,8 @@
     right: 0;
     background-color: variables.$main-purple;
     height: 48px;
-    width: 48px;
     color: #fff;
+    width: 48px;
     border-radius: 50%;
     text-align: center;
     padding: 10px;
@@ -100,6 +101,7 @@
   }
 
   &__item {
+    cursor: pointer;
     font-size: 2.625rem;
     font-weight: 600;
     @media (min-width: variables.$lg-breakPt) {
@@ -107,6 +109,11 @@
     }
     @media (min-width: variables.$xl-breakPt) {
       font-size: 4.5rem;
+    }
+
+    &:hover {
+      color: variables.$main-purple;
+      transition: all 0.25s;
     }
   }
 

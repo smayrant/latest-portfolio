@@ -3,10 +3,8 @@
 // styling common to the toggled mobile and tablet/desktop menus
 
 .main-nav {
-  display: none;
 
   @media (min-width: variables.$md-breakPt) {
-    display: block;
     height: 100vh;
   }
 
