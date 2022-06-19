@@ -123,7 +123,11 @@ const burgerMenuContainer = document.querySelector(".burger__menu-container");
 
 function toggleVisibility() {
   burgerMenuContainer.classList.toggle("hidden");
-  burgerMenuContainer.classList.toggle("burger__menu--open");
+  if (!burgerMenuContainer.classList.contains("burger__menu--open")) {
+    burgerMenuContainer.classList.add("burger__menu--open");
+  } else {
+    burgerMenuContainer.classList.remove("burger__menu--open");
+  }
 }
 
 menuList.addEventListener("click", toggleVisibility);
