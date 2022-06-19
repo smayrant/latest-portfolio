@@ -42,6 +42,7 @@ const burgerMenuContainer = document.querySelector(".burger__menu-container");
 
 function toggleVisibility() {
   burgerMenuContainer.classList.toggle("hidden");
+  burgerMenuContainer.classList.toggle("burger__menu--open");
 }
 
 menuList.addEventListener("click", toggleVisibility);

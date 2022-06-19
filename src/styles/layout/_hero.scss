@@ -1,9 +1,18 @@
 @use "../utils/variables";
 
 .hero {
+  @media (min-width: variables.$xl-breakPt) {
+    margin-bottom: 9rem;
+  }
   padding-bottom: 2rem;
   &__intro {
     position: relative;
+  }
+
+  &__headings-container {
+    @media (min-width: variables.$xl-breakPt) {
+      margin-top: 6rem;
+    }
   }
 
   &__heading {
@@ -22,6 +31,10 @@
     @media (min-width: variables.$lg-breakPt) {
       font-size: 3.5rem;
       max-width: 450px;
+    }
+    @media (min-width: variables.$xl-breakPt) {
+      font-size: 4.5rem;
+      max-width: 500px;
     }
   }
 
@@ -59,7 +72,7 @@
       bottom: -250px;
     }
     @media (min-width: variables.$xl-breakPt) {
-      bottom: -280px;
+      bottom: -480px;
     }
   }
 
@@ -73,6 +86,11 @@
       right: 17px;
       bottom: 220px;
       max-width: 500px;
+    }
+
+    @media (min-width: variables.$xl-breakPt) {
+      width: 80%;
+      max-width: 600px;
     }
   }
 
