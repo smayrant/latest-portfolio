@@ -25,11 +25,11 @@ contactBGImg2.src = ltPinkCubeHalf;
 const project1Img = document.querySelector(".project__img--first");
 project1Img.style.backgroundImage = "url(./img/showtrackr.jpg)";
 
-const project1BGImg = document.querySelector(".project__discover-img");
-project1BGImg.style.backgroundImage = "url(./img/showtrackr.jpg)";
+const projectBGImg = document.querySelector(".project__discover-img");
+projectBGImg.style.backgroundImage = "url(./img/showtrackr.jpg)";
 
-const project1BGFig = document.querySelector(".project__discover-img--figure");
-project1BGFig.src = discoverBG;
+const projectBGFig = document.querySelector(".project__discover-img--figure");
+projectBGFig.src = discoverBG;
 
 // footer images
 
