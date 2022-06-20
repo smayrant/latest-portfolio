@@ -33,9 +33,6 @@ menuBG.src = menuImg;
 const heroImg = document.querySelector(".hero__img");
 heroImg.src = heroBG;
 
-const heroImgLg = document.querySelector(".hero__img--lg");
-heroImgLg.src = lgHeroBG;
-
 const heroFigs = document.querySelector(".hero__shapes");
 heroFigs.src = heroBGFigs;
 
@@ -122,67 +119,26 @@ const mobileMenuList = document.querySelector(".mobile-nav__content");
 const burgerMenuContainer = document.querySelector(".burger__menu-container");
 
 const toggleVisibility = (element, ...className) => {
+  document.body.classList.toggle("no-scroll");
   className.map((className) => element.classList.toggle(className));
 };
 
-// burgerMenuContainer.classList.toggle("hidden");
-// burgerMenuContainer.classList.contains("burger__menu--open");
-menuList.addEventListener(
-  "click",
-  toggleVisibility.bind(
-    null,
-    burgerMenuContainer,
-    "hidden",
-    "burger__menu--open"
-  )
-);
+[
+  openedBurgerMobile,
+  openedBurger,
+  closedBurgerMobile,
+  closedBurger,
+  menuList,
+  mobileMenuList,
+].forEach(function (element) {
+  element.addEventListener(
+    "click",
+    toggleVisibility.bind(
+      null,
+      burgerMenuContainer,
+      "hidden",
+      "burger__menu--open"
+    )
+  );
+});
 
-mobileMenuList.addEventListener(
-  "click",
-  toggleVisibility.bind(
-    null,
-    burgerMenuContainer,
-    "hidden",
-    "burger__menu--open"
-  )
-);
-
-openedBurgerMobile.addEventListener(
-  "click",
-  toggleVisibility.bind(
-    null,
-    burgerMenuContainer,
-    "hidden",
-    "burger__menu--open"
-  )
-);
-
-openedBurger.addEventListener(
-  "click",
-  toggleVisibility.bind(
-    null,
-    burgerMenuContainer,
-    "hidden",
-    "burger__menu--open"
-  )
-);
-
-closedBurgerMobile.addEventListener(
-  "click",
-  toggleVisibility.bind(
-    null,
-    burgerMenuContainer,
-    "hidden",
-    "burger__menu--open"
-  )
-);
-
-closedBurger.addEventListener(
-  "click",
-  toggleVisibility.bind(
-    null,
-    burgerMenuContainer,
-    "hidden",
-    "burger__menu--open"
-  )
-);

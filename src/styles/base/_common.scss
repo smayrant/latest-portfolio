@@ -5,31 +5,23 @@
 html {
   background-color: #f9fafa;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   font-family: variables.$main-font, sans-serif;
-  height: 100vh;
+  height: 100%;
   line-height: 1.75;
-  // animation: fadeInAnimation ease 0.5s;
-  // animation-iteration-count: 1;
-  // animation-fill-mode: forwards;
+  overflow-x: hidden;
   @media (min-width: 780px) {
     position: relative;
   }
 }
 
-// @keyframes fadeInAnimation {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-
-html {
-  overflow-x: hidden;
+// hide scrolling
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
 }
 
 // hide menu

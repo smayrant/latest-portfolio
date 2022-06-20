@@ -1,6 +1,5 @@
 .burger__menu-container {
   position: fixed;
-  height: 100%;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -10,6 +9,7 @@
   background-color: #fff;
   clip-path: circle(50px at 90% -10%);
   transition: all 0.7s ease-in-out;
+  height: 100vh;
 }
 
 .burger__menu--open {

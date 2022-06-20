@@ -40,19 +40,26 @@ const menuList = document.querySelector(".main-menu__content");
 const mobileMenuList = document.querySelector(".mobile-nav__content");
 const burgerMenuContainer = document.querySelector(".burger__menu-container");
 
-function toggleVisibility() {
-  burgerMenuContainer.classList.toggle("hidden");
-  burgerMenuContainer.classList.toggle("burger__menu--open");
-}
+const toggleVisibility = (element, ...className) => {
+  document.body.classList.toggle("no-scroll");
+  className.map((className) => element.classList.toggle(className));
+};
 
-menuList.addEventListener("click", toggleVisibility);
-
-mobileMenuList.addEventListener("click", toggleVisibility);
-
-openedBurgerMobile.addEventListener("click", toggleVisibility);
-
-openedBurger.addEventListener("click", toggleVisibility);
-
-closedBurgerMobile.addEventListener("click", toggleVisibility);
-
-closedBurger.addEventListener("click", toggleVisibility);
+[
+  openedBurgerMobile,
+  openedBurger,
+  closedBurgerMobile,
+  closedBurger,
+  menuList,
+  mobileMenuList,
+].forEach(function (element) {
+  element.addEventListener(
+    "click",
+    toggleVisibility.bind(
+      null,
+      burgerMenuContainer,
+      "hidden",
+      "burger__menu--open"
+    )
+  );
+});

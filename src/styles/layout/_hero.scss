@@ -1,9 +1,28 @@
 @use "../utils/variables";
 
 .hero {
-  @media (min-width: variables.$xl-breakPt) {
-    margin-bottom: 9rem;
+  position: relative;
+  &::before {
+    @media (min-width: variables.$md-breakPt) {
+      content: "";
+      position: absolute;
+      top: -200px;
+      right: 0;
+      bottom: 0;
+      z-index: -5;
+      width: 300px;
+      background: variables.$main-blue;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      width: 425px;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      width: 525px;
+    }
   }
+
   padding-bottom: 2rem;
   &__intro {
     position: relative;
