@@ -121,23 +121,68 @@ const menuList = document.querySelector(".main-menu__content");
 const mobileMenuList = document.querySelector(".mobile-nav__content");
 const burgerMenuContainer = document.querySelector(".burger__menu-container");
 
-function toggleVisibility() {
-  burgerMenuContainer.classList.toggle("hidden");
-  if (!burgerMenuContainer.classList.contains("burger__menu--open")) {
-    burgerMenuContainer.classList.add("burger__menu--open");
-  } else {
-    burgerMenuContainer.classList.remove("burger__menu--open");
-  }
-}
+const toggleVisibility = (element, ...className) => {
+  className.map((className) => element.classList.toggle(className));
+};
 
-menuList.addEventListener("click", toggleVisibility);
+// burgerMenuContainer.classList.toggle("hidden");
+// burgerMenuContainer.classList.contains("burger__menu--open");
+menuList.addEventListener(
+  "click",
+  toggleVisibility.bind(
+    null,
+    burgerMenuContainer,
+    "hidden",
+    "burger__menu--open"
+  )
+);
 
-mobileMenuList.addEventListener("click", toggleVisibility);
+mobileMenuList.addEventListener(
+  "click",
+  toggleVisibility.bind(
+    null,
+    burgerMenuContainer,
+    "hidden",
+    "burger__menu--open"
+  )
+);
 
-openedBurgerMobile.addEventListener("click", toggleVisibility);
+openedBurgerMobile.addEventListener(
+  "click",
+  toggleVisibility.bind(
+    null,
+    burgerMenuContainer,
+    "hidden",
+    "burger__menu--open"
+  )
+);
 
-openedBurger.addEventListener("click", toggleVisibility);
+openedBurger.addEventListener(
+  "click",
+  toggleVisibility.bind(
+    null,
+    burgerMenuContainer,
+    "hidden",
+    "burger__menu--open"
+  )
+);
 
-closedBurgerMobile.addEventListener("click", toggleVisibility);
+closedBurgerMobile.addEventListener(
+  "click",
+  toggleVisibility.bind(
+    null,
+    burgerMenuContainer,
+    "hidden",
+    "burger__menu--open"
+  )
+);
 
-closedBurger.addEventListener("click", toggleVisibility);
+closedBurger.addEventListener(
+  "click",
+  toggleVisibility.bind(
+    null,
+    burgerMenuContainer,
+    "hidden",
+    "burger__menu--open"
+  )
+);
