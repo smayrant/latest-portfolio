@@ -6,14 +6,16 @@ html {
   background-color: #f9fafa;
   scroll-behavior: smooth;
   height: 100%;
-  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
 }
 
 body {
   font-family: variables.$main-font, sans-serif;
   height: 100%;
   line-height: 1.75;
-  // overflow-x: hidden;
   @media (min-width: 780px) {
     position: relative;
   }
