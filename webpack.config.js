@@ -10,6 +10,7 @@ module.exports = {
     project2: "./src/project2.js",
     project3: "./src/project3.js",
     project4: "./src/project4.js",
+    formSubmission: "./src/formSubmission.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
