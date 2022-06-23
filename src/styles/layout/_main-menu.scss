@@ -71,13 +71,7 @@
     margin-right: 3rem;
     position: absolute;
     right: 0;
-    background-color: variables.$main-purple;
-    height: 48px;
     color: #fff;
-    width: 48px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 10px;
 
     @media (min-width: variables.$xl-breakPt) {
       height: 64px;

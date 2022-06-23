@@ -2,7 +2,8 @@
 
 .hero {
   position: relative;
-  &::before {
+
+  &__bg--blue {
     @media (min-width: variables.$md-breakPt) {
       content: "";
       position: absolute;
@@ -15,11 +16,62 @@
     }
 
     @media (min-width: variables.$lg-breakPt) {
-      width: 425px;
+      width: 450px;
+    }
+
+    @media (min-width: variables.$xl-breakPt) {
+      width: 600px;
+      top: -175px;
+    }
+  }
+
+  &__bg--purple-triangle {
+    @media (min-width: variables.$md-breakPt) {
+      width: 0;
+      height: 0;
+      border-top: 200px solid transparent;
+      border-right: 420px solid variables.$lt-purple;
+      border-bottom: 0 solid transparent;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -2px;
     }
 
     @media (min-width: variables.$lg-breakPt) {
-      width: 525px;
+      border-top: 250px solid transparent;
+      border-right: 600px solid variables.$lt-purple;
+    }
+
+    @media (min-width: variables.$xl-breakPt) {
+      border-top: 300px solid transparent;
+      border-right: 750px solid variables.$lt-purple;
+    }
+
+    &:before {
+      @media (min-width: variables.$md-breakPt) {
+        width: 0;
+        height: 0;
+        border-top: 58px solid transparent;
+        border-right: 130px solid variables.$main-purple;
+        border-bottom: 0 solid transparent;
+        content: "";
+        position: absolute;
+        right: -121px;
+        bottom: 0;
+      }
+
+      @media (min-width: variables.$lg-breakPt) {
+        border-top: 65px solid transparent;
+        border-right: 150px solid variables.$main-purple;
+        right: -152px;
+      }
+
+      @media (min-width: variables.$xl-breakPt) {
+        border-top: 62px solid transparent;
+        border-right: 150px solid variables.$main-purple;
+        right: -152px;
+      }
     }
   }
 
@@ -119,8 +171,8 @@
     right: 50px;
     top: 80px;
     @media (min-width: variables.$md-breakPt) {
-      right: 440px;
-      top: 130px;
+      right: 400px;
+      top: 160px;
     }
     @media (min-width: variables.$lg-breakPt) {
       right: 500px;
@@ -138,7 +190,7 @@
     bottom: 20px;
 
     @media (min-width: variables.$md-breakPt) {
-      left: 250px;
+      left: 170px;
       bottom: -90px;
       transform: translate(-25%, 30%);
       width: 190px;

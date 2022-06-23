@@ -141,4 +141,3 @@ const toggleVisibility = (element, ...className) => {
     )
   );
 });
-

@@ -64,10 +64,11 @@ h6 {
 }
 
 .burger__line {
-  width: 25px;
+  width: 28px;
   height: 2px;
   margin-bottom: 5px;
   background-color: variables.$dark-blue;
+  padding: 1px;
 }
 
 // secondary headings

@@ -3,10 +3,6 @@
 .header {
   padding-bottom: 1rem;
 
-  @media (min-width: variables.$xl-breakPt) {
-    max-width: 1600px;
-  }
-
   &__nav {
     display: flex;
     gap: 24px;
@@ -49,6 +45,12 @@
     padding-top: 2rem;
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
+
+    @media (min-width: variables.$xl-breakPt) {
+      padding-right: 70px;
+      padding-left: 70px;
+    }
   }
 }
 
