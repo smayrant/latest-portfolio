@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Sheldrick Mayrant | Front End Developer</title>
-    <script defer src="index.js"></script>
-    <link href="index.css" rel="stylesheet" />
-  </head>
+  <script defer src="index.js"></script><link href="index.css" rel="stylesheet"></head>
   <body>
     <header class="header">
       <div class="header__content center">
@@ -99,7 +97,7 @@
         </div>
       </div>
     </header>
-    <div class="burger__menu-container">
+    <div class="burger__menu-container hidden">
       <div class="mobile-nav">
         <header class="header">
           <div class="header__content center">
@@ -303,6 +301,8 @@
     </div>
 
     <section class="hero">
+      <div class="hero__bg--blue"></div>
+      <div class="hero__bg--purple-triangle"></div>
       <div class="hero__intro">
         <div class="hero__headings-container center">
           <h6 class="hero__name secondary-heading">Sheldrick Mayrant</h6>
@@ -361,7 +361,7 @@
       </a>
       <div class="hero__img-container">
         <img src="" alt="hero blue background" class="hero__img" />
-        <img src="" alt="lg hero background" class="hero__img--lg" />
+        <!-- <img src="" alt="lg hero background" class="hero__img--lg" /> -->
         <img src="" alt="hero shapes background" class="hero__shapes" />
       </div>
     </section>
@@ -575,6 +575,7 @@
         <div class="contact-container--outer center">
           <div class="contact__content-container">
             <img
+              data-aos="fade-left"
               src=""
               alt="contact form background figure"
               class="contact__bg"
@@ -590,13 +591,20 @@
               <br />
               <span>Together.</span>
             </h2>
-            <form data-aos="fade-up" action="" class="contact__form">
+            <form
+              name="contact"
+              action="/formSubmission.html"
+              data-netlify="true"
+              data-aos="fade-up"
+              class="contact__form"
+            >
               <div class="contact__form-field">
                 <input
                   type="text"
                   name="name"
                   class="contact__form--name"
                   placeholder="Name"
+                  required
                 />
                 <svg
                   class="contact__form-svg"
@@ -618,6 +626,7 @@
                   name="email"
                   class="contact__form--email"
                   placeholder="Email"
+                  required
                 />
                 <svg
                   class="contact__form-svg"
@@ -638,6 +647,7 @@
                   name="message"
                   class="contact__form--msg"
                   placeholder="Message"
+                  required
                 ></textarea>
 
                 <svg
