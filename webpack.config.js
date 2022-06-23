@@ -84,6 +84,11 @@ module.exports = {
       template: "src/project4.html",
       chunks: ["project4"],
     }),
+    new HtmlWebpackPlugin({
+      filename: "formSubmission.html",
+      template: "src/formSubmission.html",
+      chunks: ["formSubmission"],
+    }),
     new MiniCssExtractPlugin(),
     require("autoprefixer"),
   ],
