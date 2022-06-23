@@ -5,6 +5,7 @@ import contactBG from "./img/contact-bg.png";
 import ltPinkCubeHalf from "./img/lt-pink-cube-half.png";
 import discoverBG from "./img/discover-bg.png";
 import footerBG from "./img/bg-footer.png";
+import showTrackr from "./img/showtrackr.jpg";
 
 // menu background
 
@@ -23,10 +24,10 @@ contactBGImg2.src = ltPinkCubeHalf;
 
 // project image
 const project1Img = document.querySelector(".project__img--first");
-project1Img.style.backgroundImage = "url(./img/showtrackr.jpg)";
+project1Img.style.backgroundImage = `url("${showTrackr}")`;
 
 const projectBGImg = document.querySelector(".project__discover-img");
-projectBGImg.style.backgroundImage = "url(./img/showtrackr.jpg)";
+projectBGImg.style.backgroundImage = `url("${showTrackr}")`;
 
 const projectBGFig = document.querySelector(".project__discover-img--figure");
 projectBGFig.src = discoverBG;
