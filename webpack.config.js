@@ -10,7 +10,6 @@ module.exports = {
     project2: "./src/project2.js",
     project3: "./src/project3.js",
     project4: "./src/project4.js",
-    formSubmission: "./src/formSubmission.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -84,11 +83,6 @@ module.exports = {
       filename: "project4.html",
       template: "src/project4.html",
       chunks: ["project4"],
-    }),
-    new HtmlWebpackPlugin({
-      filename: "formSubmission.html",
-      template: "src/formSubmission.html",
-      chunks: ["formSubmission"],
     }),
     new MiniCssExtractPlugin(),
     require("autoprefixer"),
