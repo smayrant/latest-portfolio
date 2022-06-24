@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: "./src/index.js",
     project1: "./src/project1.js",
@@ -13,11 +13,10 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].js",
+    filename: "[name].[contenthash].js",
     clean: true,
     assetModuleFilename: "[name][ext]",
   },
-  devtool: "source-map",
   devServer: {
     static: {
       directory: path.resolve(__dirname, "src"),
@@ -54,7 +53,7 @@ module.exports = {
         type: "asset/resource",
         include: path.resolve(__dirname, "src/img"),
         generator: {
-          filename: "dist/[name][ext]",
+          filename: "img/[name][ext]",
         },
       },
     ],
