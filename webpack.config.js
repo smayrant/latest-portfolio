@@ -62,26 +62,31 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "src/index.html",
+      favicon: "src/img/favicon-32x32.png",
       chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
       filename: "project1.html",
       template: "src/project1.html",
+      favicon: "src/img/favicon-32x32.png",
       chunks: ["project1"],
     }),
     new HtmlWebpackPlugin({
       filename: "project2.html",
       template: "src/project2.html",
+      favicon: "src/img/favicon-32x32.png",
       chunks: ["project2"],
     }),
     new HtmlWebpackPlugin({
       filename: "project3.html",
       template: "src/project3.html",
+      favicon: "src/img/favicon-32x32.png",
       chunks: ["project3"],
     }),
     new HtmlWebpackPlugin({
       filename: "project4.html",
       template: "src/project4.html",
+      favicon: "src/img/favicon-32x32.png",
       chunks: ["project4"],
     }),
     new MiniCssExtractPlugin(),

@@ -962,9 +962,10 @@ ul {
   }
 }
 
-.scroll {
+.scroll__container {
   display: inline-block;
 }
+
 @media (min-width: 768px) {
   .scroll {
     display: flex;
@@ -1774,9 +1775,9 @@ textarea:focus + svg {
   bottom: 0;
   z-index: 100;
   background-color: #fff;
-  -webkit-clip-path: circle(50px at 90% -10%);
-          clip-path: circle(50px at 90% -10%);
-  transition: all 0.5s ease-in-out;
+  -webkit-clip-path: circle(150px at 90% -10%);
+          clip-path: circle(150px at 90% -10%);
+  transition: all 2.5s ease-in;
   height: 100vh;
 }
 

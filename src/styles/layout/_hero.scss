@@ -207,8 +207,11 @@
   }
 }
 
-.scroll {
+.scroll__container {
   display: inline-block;
+}
+
+.scroll {
   @media (min-width: variables.$md-breakPt) {
     display: flex;
     align-items: center;
