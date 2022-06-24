@@ -1,24 +1,6 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/project1.js":
-/*!*************************!*\
-  !*** ./src/project1.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/bg-mobile.png */ \"./src/img/bg-mobile.png\");\n/* harmony import */ var _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/bg-menu.png */ \"./src/img/bg-menu.png\");\n/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/contact-bg.png */ \"./src/img/contact-bg.png\");\n/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ \"./src/img/lt-pink-cube-half.png\");\n/* harmony import */ var _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/discover-bg.png */ \"./src/img/discover-bg.png\");\n/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/bg-footer.png */ \"./src/img/bg-footer.png\");\n/* harmony import */ var _img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/showtrackr.jpg */ \"./src/img/showtrackr.jpg\");\n\n\n\n\n\n\n\n // menu background\n\nvar mobileBG = document.querySelector(\".mobile-nav\");\nmobileBG.style.backgroundImage = \"url(\\\"\".concat(_img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__, \"\\\")\");\nvar menuBG = document.querySelector(\".main-menu__bg\");\nmenuBG.src = _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__; // contact images\n\nvar contactBGImg = document.querySelector(\".contact__bg\");\ncontactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_3__;\nvar contactBGImg2 = document.querySelector(\".contact__bg--lower\");\ncontactBGImg2.src = _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_4__; // project image\n\nvar project1Img = document.querySelector(\".project__img--first\");\nproject1Img.style.backgroundImage = \"url(\\\"\".concat(_img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_7__, \"\\\")\");\nvar projectBGImg = document.querySelector(\".project__discover-img\");\nprojectBGImg.style.backgroundImage = \"url(\\\"\".concat(_img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_7__, \"\\\")\");\nvar projectBGFig = document.querySelector(\".project__discover-img--figure\");\nprojectBGFig.src = _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_5__; // footer images\n\nvar bgFooter = document.querySelector(\".footer\");\nbgFooter.style.backgroundImage = \"url(\\\"\".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_6__, \"\\\")\"); // burger menu toggle\n\nvar openedBurgerMobile = document.querySelector(\".mobile-burger\");\nvar openedBurger = document.querySelector(\".main-menu__burger\");\nvar closedBurgerMobile = document.querySelector(\".header__burger-menu--mobile\");\nvar closedBurger = document.querySelector(\".header__burger-menu--main\");\nvar menuList = document.querySelector(\".main-menu__content\");\nvar mobileMenuList = document.querySelector(\".mobile-nav__content\");\nvar burgerMenuContainer = document.querySelector(\".burger__menu-container\");\n\nvar toggleVisibility = function toggleVisibility(element) {\n  document.body.classList.toggle(\"no-scroll\");\n\n  for (var _len = arguments.length, className = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {\n    className[_key - 1] = arguments[_key];\n  }\n\n  className.map(function (className) {\n    return element.classList.toggle(className);\n  });\n};\n\n[openedBurgerMobile, openedBurger, closedBurgerMobile, closedBurger, menuList, mobileMenuList].forEach(function (element) {\n  element.addEventListener(\"click\", toggleVisibility.bind(null, burgerMenuContainer, \"hidden\", \"burger__menu--open\"));\n});\n\n//# sourceURL=webpack://portfolio/./src/project1.js?");
-
-/***/ }),
 
 /***/ "./src/styles/main.scss":
 /*!******************************!*\
@@ -26,7 +8,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://portfolio/./src/styles/main.scss?");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -36,7 +20,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dist/bg-footer.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-footer.png?");
+module.exports = __webpack_require__.p + "dist/bg-footer.png";
 
 /***/ }),
 
@@ -46,7 +30,7 @@ eval("module.exports = __webpack_require__.p + \"dist/bg-footer.png\";\n\n//# so
   \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dist/bg-menu.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-menu.png?");
+module.exports = __webpack_require__.p + "dist/bg-menu.png";
 
 /***/ }),
 
@@ -56,7 +40,7 @@ eval("module.exports = __webpack_require__.p + \"dist/bg-menu.png\";\n\n//# sour
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dist/bg-mobile.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-mobile.png?");
+module.exports = __webpack_require__.p + "dist/bg-mobile.png";
 
 /***/ }),
 
@@ -66,7 +50,7 @@ eval("module.exports = __webpack_require__.p + \"dist/bg-mobile.png\";\n\n//# so
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dist/contact-bg.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/contact-bg.png?");
+module.exports = __webpack_require__.p + "dist/contact-bg.png";
 
 /***/ }),
 
@@ -76,7 +60,7 @@ eval("module.exports = __webpack_require__.p + \"dist/contact-bg.png\";\n\n//# s
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dist/discover-bg.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/discover-bg.png?");
+module.exports = __webpack_require__.p + "dist/discover-bg.png";
 
 /***/ }),
 
@@ -86,7 +70,7 @@ eval("module.exports = __webpack_require__.p + \"dist/discover-bg.png\";\n\n//# 
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dist/lt-pink-cube-half.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/lt-pink-cube-half.png?");
+module.exports = __webpack_require__.p + "dist/lt-pink-cube-half.png";
 
 /***/ }),
 
@@ -96,7 +80,7 @@ eval("module.exports = __webpack_require__.p + \"dist/lt-pink-cube-half.png\";\n
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dist/showtrackr.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/showtrackr.jpg?");
+module.exports = __webpack_require__.p + "dist/showtrackr.jpg";
 
 /***/ })
 
@@ -171,11 +155,75 @@ eval("module.exports = __webpack_require__.p + \"dist/showtrackr.jpg\";\n\n//# s
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/project1.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!*************************!*\
+  !*** ./src/project1.js ***!
+  \*************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
+/* harmony import */ var _img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/bg-mobile.png */ "./src/img/bg-mobile.png");
+/* harmony import */ var _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/bg-menu.png */ "./src/img/bg-menu.png");
+/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/contact-bg.png */ "./src/img/contact-bg.png");
+/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ "./src/img/lt-pink-cube-half.png");
+/* harmony import */ var _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/discover-bg.png */ "./src/img/discover-bg.png");
+/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/bg-footer.png */ "./src/img/bg-footer.png");
+/* harmony import */ var _img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/showtrackr.jpg */ "./src/img/showtrackr.jpg");
+
+
+
+
+
+
+
+ // menu background
+
+var mobileBG = document.querySelector(".mobile-nav");
+mobileBG.style.backgroundImage = "url(\"".concat(_img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__, "\")");
+var menuBG = document.querySelector(".main-menu__bg");
+menuBG.src = _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__; // contact images
+
+var contactBGImg = document.querySelector(".contact__bg");
+contactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_3__;
+var contactBGImg2 = document.querySelector(".contact__bg--lower");
+contactBGImg2.src = _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_4__; // project image
+
+var project1Img = document.querySelector(".project__img--first");
+project1Img.style.backgroundImage = "url(\"".concat(_img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_7__, "\")");
+var projectBGImg = document.querySelector(".project__discover-img");
+projectBGImg.style.backgroundImage = "url(\"".concat(_img_showtrackr_jpg__WEBPACK_IMPORTED_MODULE_7__, "\")");
+var projectBGFig = document.querySelector(".project__discover-img--figure");
+projectBGFig.src = _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_5__; // footer images
+
+var bgFooter = document.querySelector(".footer");
+bgFooter.style.backgroundImage = "url(\"".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_6__, "\")"); // burger menu toggle
+
+var openedBurgerMobile = document.querySelector(".mobile-burger");
+var openedBurger = document.querySelector(".main-menu__burger");
+var closedBurgerMobile = document.querySelector(".header__burger-menu--mobile");
+var closedBurger = document.querySelector(".header__burger-menu--main");
+var menuList = document.querySelector(".main-menu__content");
+var mobileMenuList = document.querySelector(".mobile-nav__content");
+var burgerMenuContainer = document.querySelector(".burger__menu-container");
+
+var toggleVisibility = function toggleVisibility(element) {
+  document.body.classList.toggle("no-scroll");
+
+  for (var _len = arguments.length, className = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    className[_key - 1] = arguments[_key];
+  }
+
+  className.map(function (className) {
+    return element.classList.toggle(className);
+  });
+};
+
+[openedBurgerMobile, openedBurger, closedBurgerMobile, closedBurger, menuList, mobileMenuList].forEach(function (element) {
+  element.addEventListener("click", toggleVisibility.bind(null, burgerMenuContainer, "hidden", "burger__menu--open"));
+});
+})();
+
 /******/ })()
 ;
+//# sourceMappingURL=project1.js.map

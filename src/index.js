@@ -113,6 +113,7 @@ const openedBurger = document.querySelector(".main-menu__burger");
 const closedBurgerMobile = document.querySelector(
   ".header__burger-menu--mobile"
 );
+// const burgerLines = document.querySelectorAll(".burger__line");
 const closedBurger = document.querySelector(".header__burger-menu--main");
 const menuList = document.querySelector(".main-menu__content");
 const mobileMenuList = document.querySelector(".mobile-nav__content");
@@ -140,4 +141,8 @@ const toggleVisibility = (element, ...className) => {
       "burger__menu--open"
     )
   );
+});
+
+openedBurger.addEventListener("click", function (e) {
+  console.log(e.target);
 });

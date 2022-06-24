@@ -1777,7 +1777,7 @@ textarea:focus + svg {
   background-color: #fff;
   -webkit-clip-path: circle(150px at 90% -10%);
           clip-path: circle(150px at 90% -10%);
-  transition: all 2.5s ease-in;
+  transition: all 0.4s;
   height: 100vh;
 }
 
@@ -1785,3 +1785,5 @@ textarea:focus + svg {
   -webkit-clip-path: circle(4000px at 90% -10%);
           clip-path: circle(4000px at 90% -10%);
 }
+
+/*# sourceMappingURL=project2.css.map*/

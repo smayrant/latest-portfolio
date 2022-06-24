@@ -67,11 +67,11 @@
   }
 
   &__burger {
-    margin-top: 2rem;
-    margin-right: 3rem;
+    margin-top: 2.3rem;
     position: absolute;
     right: 0;
     color: #fff;
+    display: block;
 
     @media (min-width: variables.$xl-breakPt) {
       height: 64px;
@@ -120,7 +120,7 @@
   &__social {
     display: flex;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     gap: 70px;
 
     a {
