@@ -2,9 +2,9 @@ import "./styles/main.scss";
 import mobileBGImg from "./img/bg-mobile.png";
 import menuImg from "./img/bg-menu.png";
 import heroBG from "./img/blue-bg.svg";
-import lgHeroBG from "./img/lg-hero-bg.svg";
 import heroBGFigs from "./img/hero-bg-shapes.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
+import designoPreview from "./img/designo-preview.png";
 import pinkFig from "./img/bg-figure-pink.png";
 import ltPinkCube from "./img/lt-pink-cube.png";
 import ltPinkCubeHalf from "./img/lt-pink-cube-half.png";
@@ -13,10 +13,6 @@ import whiteCube from "./img/white-cube.png";
 import whiteCubeLg from "./img/white-cube-lg.png";
 import purpleCube from "./img/purple-cube.png";
 import blueCube from "./img/blue-cube.png";
-import showPreview from "./img/showtrackr.jpg";
-import moviePreview from "./img/movie-seeker.jpg";
-import SGPreview from "./img/sgassociates.jpg";
-import fitPreview from "./img/fit4less.jpg";
 import contactBG from "./img/contact-bg.png";
 import footerBG from "./img/bg-footer.png";
 
@@ -57,9 +53,7 @@ whatIDoCubeWhite.src = whiteCubeLg;
 const leftAboutMeCube = document.querySelector(".about-me__purple-cube--left");
 leftAboutMeCube.src = purpleCube;
 
-const rightAboutMeCube = document.querySelector(
-  ".about-me__purple-cube--right"
-);
+const rightAboutMeCube = document.querySelector(".about-me__purple-cube--right");
 rightAboutMeCube.src = purpleCube;
 
 const aboutMeOrangeBall = document.querySelector(".about-me__orange-ball");
@@ -74,26 +68,12 @@ aboutMeBlueCube.src = blueCube;
 const aboutMePurpleBall = document.querySelector(".about-me__purple-ball");
 aboutMePurpleBall.src = purpleBall;
 
-const aboutMePurpleBall2 = document.querySelector(
-  ".about-me__purple-ball--second"
-);
+const aboutMePurpleBall2 = document.querySelector(".about-me__purple-ball--second");
 aboutMePurpleBall2.src = purpleBall;
 
 // Work Images
 const workCube = document.querySelector(".work__bg-cube");
 workCube.src = ltPinkCube;
-
-const showtrackr = document.querySelector(".showTrackrImg");
-showtrackr.src = showPreview;
-
-const movieSeeker = document.querySelector(".movieSeekerImg");
-movieSeeker.src = moviePreview;
-
-const SGassociates = document.querySelector(".SGAssociatesImg");
-SGassociates.src = SGPreview;
-
-const fit4less = document.querySelector(".fit4lessImg");
-fit4less.src = fitPreview;
 
 // contact images
 const contactBGImg = document.querySelector(".contact__bg");
@@ -101,6 +81,9 @@ contactBGImg.src = contactBG;
 
 const contactBGImg2 = document.querySelector(".contact__bg--lower");
 contactBGImg2.src = ltPinkCubeHalf;
+
+const designoPreviewImg = document.querySelector(".designoImg");
+designoPreviewImg.src = designoPreview;
 
 // footer images
 
@@ -110,9 +93,7 @@ bgFooter.style.backgroundImage = `url("${footerBG}")`;
 // burger menu toggle
 const openedBurgerMobile = document.querySelector(".mobile-burger");
 const openedBurger = document.querySelector(".main-menu__burger");
-const closedBurgerMobile = document.querySelector(
-  ".header__burger-menu--mobile"
-);
+const closedBurgerMobile = document.querySelector(".header__burger-menu--mobile");
 // const burgerLines = document.querySelectorAll(".burger__line");
 const closedBurger = document.querySelector(".header__burger-menu--main");
 const menuList = document.querySelector(".main-menu__content");
@@ -134,15 +115,6 @@ const toggleVisibility = (element, ...className) => {
 ].forEach(function (element) {
   element.addEventListener(
     "click",
-    toggleVisibility.bind(
-      null,
-      burgerMenuContainer,
-      "hidden",
-      "burger__menu--open"
-    )
+    toggleVisibility.bind(null, burgerMenuContainer, "hidden", "burger__menu--open")
   );
-});
-
-openedBurger.addEventListener("click", function (e) {
-  console.log(e.target);
 });

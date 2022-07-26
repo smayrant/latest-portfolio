@@ -1,21 +1,23 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     index: "./src/index.js",
     project1: "./src/project1.js",
-    project2: "./src/project2.js",
-    project3: "./src/project3.js",
-    project4: "./src/project4.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
     clean: true,
     assetModuleFilename: "[name][ext]",
+  },
+  optimization: {
+    minimizer: [new CssMinimizerPlugin()],
+    splitChunks: { chunks: "all" },
   },
   devServer: {
     static: {
@@ -30,12 +32,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
         include: path.resolve(__dirname, "src/styles"),
       },
       {
@@ -70,24 +67,6 @@ module.exports = {
       template: "src/project1.html",
       favicon: "src/img/favicon-32x32.png",
       chunks: ["project1"],
-    }),
-    new HtmlWebpackPlugin({
-      filename: "project2.html",
-      template: "src/project2.html",
-      favicon: "src/img/favicon-32x32.png",
-      chunks: ["project2"],
-    }),
-    new HtmlWebpackPlugin({
-      filename: "project3.html",
-      template: "src/project3.html",
-      favicon: "src/img/favicon-32x32.png",
-      chunks: ["project3"],
-    }),
-    new HtmlWebpackPlugin({
-      filename: "project4.html",
-      template: "src/project4.html",
-      favicon: "src/img/favicon-32x32.png",
-      chunks: ["project4"],
     }),
     new MiniCssExtractPlugin(),
     require("autoprefixer"),
