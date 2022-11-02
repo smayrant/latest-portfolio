@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     index: "./src/index.js",
     project1: "./src/project1.js",
+    project2: "./src/project2.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -32,7 +33,12 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
         include: path.resolve(__dirname, "src/styles"),
       },
       {
@@ -67,6 +73,12 @@ module.exports = {
       template: "src/project1.html",
       favicon: "src/img/favicon-32x32.png",
       chunks: ["project1"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "project2.html",
+      template: "src/project2.html",
+      favicon: "src/img/favicon-32x32.png",
+      chunks: ["project2"],
     }),
     new MiniCssExtractPlugin(),
     require("autoprefixer"),
