@@ -2,8 +2,7 @@
 @use "../utils/mixins";
 
 .about-me {
-  margin-top: 3rem;
-  // padding-bottom: 20rem;
+  margin-top: 6rem;
   @include mixins.blue-bg-styling;
   position: relative;
 

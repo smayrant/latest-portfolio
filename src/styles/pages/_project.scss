@@ -38,7 +38,8 @@
   }
 
   &__links {
-    margin-top: 2.5rem;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
 
@@ -47,6 +48,11 @@
       width: 100%;
       justify-content: center;
     }
+  }
+
+  &__details {
+    padding-top: 1rem;
+    padding-bottom: 6rem;
   }
 
   &__link {
@@ -178,8 +184,8 @@
     }
 
     @media (min-width: variables.$lg-breakPt) {
-      padding-bottom: 4rem;
-      padding-top: 2rem;
+      padding-bottom: 7rem;
+      padding-top: 4rem;
     }
 
     &-content {
