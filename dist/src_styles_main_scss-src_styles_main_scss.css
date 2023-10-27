@@ -1286,14 +1286,14 @@ ul {
 .work__item-container {
   box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
   border-radius: 24px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 .work__item-img {
   border-radius: 24px 24px 0 0;
   width: 100%;
 }
 .work__item-text-container {
-  padding: 1.5rem 2rem 0.5rem;
+  padding: 1.5rem 2rem 0rem;
 }
 .work__item-title {
   font-size: 1.5em;

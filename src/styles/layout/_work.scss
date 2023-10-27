@@ -49,7 +49,7 @@
   &__item-container {
     @include mixins.box-shadow;
     border-radius: 24px;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     @media (min-width: variables.$md-breakPt) {
     }
   }
@@ -60,7 +60,7 @@
   }
 
   &__item-text-container {
-    padding: 1.5rem 2rem 0.5rem;
+    padding: 1.5rem 2rem 0rem;
   }
 
   &__item-title {

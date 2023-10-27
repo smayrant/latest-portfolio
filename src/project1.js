@@ -1,11 +1,11 @@
 import "./styles/main.scss";
 import mobileBGImg from "./img/bg-mobile.png";
 import menuImg from "./img/bg-menu.png";
-import designo from "./img/designo.png";
-import designoPreview1 from "./img/designo-preview-1.png";
-import designoPreview2 from "./img/designo-preview-2.png";
-import designoPreview3 from "./img/designo-preview-3.png";
-import designoPreview4 from "./img/designo-preview-4.png";
+import meiro from "./img/meiro-bg.jpg";
+import meiroPreview1 from "./img/meiro-preview.png";
+import meiroPreview2 from "./img/meiro-preview-2.png";
+import meiroPreview3 from "./img/meiro-preview-3.png";
+import meiroPreview4 from "./img/meiro-preview-4.png";
 import contactBG from "./img/contact-bg.png";
 import ltPinkCubeHalf from "./img/lt-pink-cube-half.png";
 import discoverBG from "./img/discover-bg.png";
@@ -27,21 +27,21 @@ const contactBGImg2 = document.querySelector(".contact__bg--lower");
 contactBGImg2.src = ltPinkCubeHalf;
 
 // project image
-const designoImg = document.querySelector(".project__img--designo");
-designoImg.style.backgroundImage = `url("${designo}")`;
+const meiroImg = document.querySelector(".project__img--meiro");
+meiroImg.style.backgroundImage = `url("${meiro}")`;
 
 // project preview images
-const designoPreviewImg1 = document.querySelector(".preview-image--designo1");
-designoPreviewImg1.src = designoPreview1;
+const meiroPreviewImg1 = document.querySelector(".preview-image--meiro1");
+meiroPreviewImg1.src = meiroPreview1;
 
-const designoPreviewImg2 = document.querySelector(".preview-image--designo2");
-designoPreviewImg2.src = designoPreview2;
+const meiroPreviewImg2 = document.querySelector(".preview-image--meiro2");
+meiroPreviewImg2.src = meiroPreview2;
 
-const designoPreviewImg3 = document.querySelector(".preview-image--designo3");
-designoPreviewImg3.src = designoPreview3;
+const meiroPreviewImg3 = document.querySelector(".preview-image--meiro3");
+meiroPreviewImg3.src = meiroPreview3;
 
-const designoPreviewImg4 = document.querySelector(".preview-image--designo4");
-designoPreviewImg4.src = designoPreview4;
+const meiroPreviewImg4 = document.querySelector(".preview-image--meiro4");
+meiroPreviewImg4.src = meiroPreview4;
 
 const projectBGFig = document.querySelector(".project__discover-img--figure");
 projectBGFig.src = discoverBG;
@@ -55,7 +55,9 @@ bgFooter.style.backgroundImage = `url("${footerBG}")`;
 // burger menu toggle
 const openedBurgerMobile = document.querySelector(".mobile-burger");
 const openedBurger = document.querySelector(".main-menu__burger");
-const closedBurgerMobile = document.querySelector(".header__burger-menu--mobile");
+const closedBurgerMobile = document.querySelector(
+  ".header__burger-menu--mobile"
+);
 const closedBurger = document.querySelector(".header__burger-menu--main");
 const menuList = document.querySelector(".main-menu__content");
 const mobileMenuList = document.querySelector(".mobile-nav__content");
@@ -76,6 +78,11 @@ const toggleVisibility = (element, ...className) => {
 ].forEach(function (element) {
   element.addEventListener(
     "click",
-    toggleVisibility.bind(null, burgerMenuContainer, "hidden", "burger__menu--open")
+    toggleVisibility.bind(
+      null,
+      burgerMenuContainer,
+      "hidden",
+      "burger__menu--open"
+    )
   );
 });

@@ -4,7 +4,7 @@ import menuImg from "./img/bg-menu.png";
 import heroBG from "./img/blue-bg.svg";
 import heroBGFigs from "./img/hero-bg-shapes.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
-import designoPreview from "./img/designo-preview.png";
+import meiroPreview from "./img/meiro-preview.png";
 import audiophilePreview from "./img/audiophile-preview.png";
 import pinkFig from "./img/bg-figure-pink.png";
 import ltPinkCube from "./img/lt-pink-cube.png";
@@ -80,8 +80,8 @@ aboutMePurpleBall2.src = purpleBall;
 const workCube = document.querySelector(".work__bg-cube");
 workCube.src = ltPinkCube;
 
-const designoPreviewImg = document.querySelector(".designoImg");
-designoPreviewImg.src = designoPreview;
+const meiroPreviewImg = document.querySelector(".meiroImg");
+meiroPreviewImg.src = meiroPreview;
 
 const audiophilePreviewImg = document.querySelector(".audiophileImg");
 audiophilePreviewImg.src = audiophilePreview;
