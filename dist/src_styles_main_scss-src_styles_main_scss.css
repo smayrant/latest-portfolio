@@ -1612,7 +1612,7 @@ textarea:focus + svg {
 @media (max-width: 768px) {
   .project__overview:before {
     top: 100%;
-    margin-top: 0.6rem;
+    margin-top: 0.8rem;
   }
 }
 @media (min-width: 768px) {
