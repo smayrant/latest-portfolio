@@ -5,7 +5,9 @@ import heroBG from "./img/blue-bg.svg";
 import heroBGFigs from "./img/hero-bg-shapes.png";
 import orangeBall from "./img/bg-figure-orange-ball.png";
 import meiroPreview from "./img/meiro-preview.png";
-import audiophilePreview from "./img/audiophile-preview.png";
+import recRoomPreview from "./img/recRoom-preview-1.png";
+import crocsPreview from "./img/crocs-preview-1.png";
+import freshness2goPreview from "./img/freshness2go-preview-1.png";
 import pinkFig from "./img/bg-figure-pink.png";
 import ltPinkCube from "./img/lt-pink-cube.png";
 import ltPinkCubeHalf from "./img/lt-pink-cube-half.png";
@@ -83,8 +85,14 @@ workCube.src = ltPinkCube;
 const meiroPreviewImg = document.querySelector(".meiroImg");
 meiroPreviewImg.src = meiroPreview;
 
-const audiophilePreviewImg = document.querySelector(".audiophileImg");
-audiophilePreviewImg.src = audiophilePreview;
+const recRoomPreviewImg = document.querySelector(".recRoomImg");
+recRoomPreviewImg.src = recRoomPreview;
+
+const crocsPreviewImg = document.querySelector(".crocsImg");
+crocsPreviewImg.src = crocsPreview;
+
+const freshness2goPreviewImg = document.querySelector(".freshness2goImg");
+freshness2goPreviewImg.src = freshness2goPreview;
 
 // contact images
 const contactBGImg = document.querySelector(".contact__bg");

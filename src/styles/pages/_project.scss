@@ -78,7 +78,7 @@
       @include mixins.purple-line;
       @media (max-width: variables.$md-breakPt) {
         top: 100%;
-        margin-top: 0.6rem;
+        margin-top: 0.8rem;
       }
 
       @media (min-width: variables.$md-breakPt) {

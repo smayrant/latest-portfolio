@@ -9,6 +9,8 @@ module.exports = {
     index: "./src/index.js",
     project1: "./src/project1.js",
     project2: "./src/project2.js",
+    project3: "./src/project3.js",
+    project4: "./src/project4.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -79,6 +81,18 @@ module.exports = {
       template: "src/project2.html",
       favicon: "src/img/favicon-32x32.png",
       chunks: ["project2"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "project3.html",
+      template: "src/project3.html",
+      favicon: "src/img/favicon-32x32.png",
+      chunks: ["project3"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "project4.html",
+      template: "src/project4.html",
+      favicon: "src/img/favicon-32x32.png",
+      chunks: ["project4"],
     }),
     new MiniCssExtractPlugin(),
     require("autoprefixer"),

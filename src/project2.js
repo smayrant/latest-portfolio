@@ -1,11 +1,11 @@
 import "./styles/main.scss";
 import mobileBGImg from "./img/bg-mobile.png";
 import menuImg from "./img/bg-menu.png";
-import audiophile from "./img/audiophile.png";
-import audiophilePreview1 from "./img/audiophile-preview-1.png";
-import audiophilePreview2 from "./img/audiophile-preview-2.png";
-import audiophilePreview3 from "./img/audiophile-preview-3.png";
-import audiophilePreview4 from "./img/audiophile-preview-4.png";
+import recRoomBg from "./img/recRoom-bg.jpg";
+import recRoomPreview1 from "./img/recRoom-preview-1.png";
+import recRoomPreview2 from "./img/recRoom-preview-2.png";
+import recRoomPreview3 from "./img/recRoom-preview-3.png";
+import recRoomPreview4 from "./img/recRoom-preview-4.png";
 import contactBG from "./img/contact-bg.png";
 import ltPinkCubeHalf from "./img/lt-pink-cube-half.png";
 import discoverBG from "./img/discover-bg.png";
@@ -27,29 +27,21 @@ const contactBGImg2 = document.querySelector(".contact__bg--lower");
 contactBGImg2.src = ltPinkCubeHalf;
 
 // project image
-const audiophileImg = document.querySelector(".project__img--audiophile");
-audiophileImg.style.backgroundImage = `url("${audiophile}")`;
+const recRoomImg = document.querySelector(".project__img--recRoom");
+recRoomImg.style.backgroundImage = `url("${recRoomBg}")`;
 
 // project preview images
-const audiophilePreviewImg1 = document.querySelector(
-  ".preview-image--audiophile1"
-);
-audiophilePreviewImg1.src = audiophilePreview1;
+const recRoomPreviewImg1 = document.querySelector(".preview-image--recRoom1");
+recRoomPreviewImg1.src = recRoomPreview1;
 
-const audiophilePreviewImg2 = document.querySelector(
-  ".preview-image--audiophile2"
-);
-audiophilePreviewImg2.src = audiophilePreview2;
+const recRoomPreviewImg2 = document.querySelector(".preview-image--recRoom2");
+recRoomPreviewImg2.src = recRoomPreview2;
 
-const audiophilePreviewImg3 = document.querySelector(
-  ".preview-image--audiophile3"
-);
-audiophilePreviewImg3.src = audiophilePreview3;
+const recRoomPreviewImg3 = document.querySelector(".preview-image--recRoom3");
+recRoomPreviewImg3.src = recRoomPreview3;
 
-const audiophilePreviewImg4 = document.querySelector(
-  ".preview-image--audiophile4"
-);
-audiophilePreviewImg4.src = audiophilePreview4;
+const recRoomPreviewImg4 = document.querySelector(".preview-image--recRoom4");
+recRoomPreviewImg4.src = recRoomPreview4;
 
 const projectBGFig = document.querySelector(".project__discover-img--figure");
 projectBGFig.src = discoverBG;

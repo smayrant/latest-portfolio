@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/project2.js":
+/***/ "./src/project4.js":
 /*!*************************!*\
-  !*** ./src/project2.js ***!
+  !*** ./src/project4.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/bg-mobile.png */ \"./src/img/bg-mobile.png\");\n/* harmony import */ var _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/bg-menu.png */ \"./src/img/bg-menu.png\");\n/* harmony import */ var _img_audiophile_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/audiophile.png */ \"./src/img/audiophile.png\");\n/* harmony import */ var _img_audiophile_preview_1_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/audiophile-preview-1.png */ \"./src/img/audiophile-preview-1.png\");\n/* harmony import */ var _img_audiophile_preview_2_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/audiophile-preview-2.png */ \"./src/img/audiophile-preview-2.png\");\n/* harmony import */ var _img_audiophile_preview_3_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/audiophile-preview-3.png */ \"./src/img/audiophile-preview-3.png\");\n/* harmony import */ var _img_audiophile_preview_4_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/audiophile-preview-4.png */ \"./src/img/audiophile-preview-4.png\");\n/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/contact-bg.png */ \"./src/img/contact-bg.png\");\n/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ \"./src/img/lt-pink-cube-half.png\");\n/* harmony import */ var _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./img/discover-bg.png */ \"./src/img/discover-bg.png\");\n/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./img/bg-footer.png */ \"./src/img/bg-footer.png\");\n\n\n\n\n\n\n\n\n\n\n\n // menu background\n\nvar mobileBG = document.querySelector(\".mobile-nav\");\nmobileBG.style.backgroundImage = \"url(\\\"\".concat(_img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__, \"\\\")\");\nvar menuBG = document.querySelector(\".main-menu__bg\");\nmenuBG.src = _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__; // contact images\n\nvar contactBGImg = document.querySelector(\".contact__bg\");\ncontactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_8__;\nvar contactBGImg2 = document.querySelector(\".contact__bg--lower\");\ncontactBGImg2.src = _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_9__; // project image\n\nvar audiophileImg = document.querySelector(\".project__img--audiophile\");\naudiophileImg.style.backgroundImage = \"url(\\\"\".concat(_img_audiophile_png__WEBPACK_IMPORTED_MODULE_3__, \"\\\")\"); // project preview images\n\nvar audiophilePreviewImg1 = document.querySelector(\".preview-image--audiophile1\");\naudiophilePreviewImg1.src = _img_audiophile_preview_1_png__WEBPACK_IMPORTED_MODULE_4__;\nvar audiophilePreviewImg2 = document.querySelector(\".preview-image--audiophile2\");\naudiophilePreviewImg2.src = _img_audiophile_preview_2_png__WEBPACK_IMPORTED_MODULE_5__;\nvar audiophilePreviewImg3 = document.querySelector(\".preview-image--audiophile3\");\naudiophilePreviewImg3.src = _img_audiophile_preview_3_png__WEBPACK_IMPORTED_MODULE_6__;\nvar audiophilePreviewImg4 = document.querySelector(\".preview-image--audiophile4\");\naudiophilePreviewImg4.src = _img_audiophile_preview_4_png__WEBPACK_IMPORTED_MODULE_7__;\nvar projectBGFig = document.querySelector(\".project__discover-img--figure\");\nprojectBGFig.src = _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_10__; // footer images\n\nvar bgFooter = document.querySelector(\".footer\");\nbgFooter.style.backgroundImage = \"url(\\\"\".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_11__, \"\\\")\"); // burger menu toggle\n\nvar openedBurgerMobile = document.querySelector(\".mobile-burger\");\nvar openedBurger = document.querySelector(\".main-menu__burger\");\nvar closedBurgerMobile = document.querySelector(\".header__burger-menu--mobile\");\nvar closedBurger = document.querySelector(\".header__burger-menu--main\");\nvar menuList = document.querySelector(\".main-menu__content\");\nvar mobileMenuList = document.querySelector(\".mobile-nav__content\");\nvar burgerMenuContainer = document.querySelector(\".burger__menu-container\");\n\nvar toggleVisibility = function toggleVisibility(element) {\n  document.body.classList.toggle(\"no-scroll\");\n\n  for (var _len = arguments.length, className = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {\n    className[_key - 1] = arguments[_key];\n  }\n\n  className.map(function (className) {\n    return element.classList.toggle(className);\n  });\n};\n\n[openedBurgerMobile, openedBurger, closedBurgerMobile, closedBurger, menuList, mobileMenuList].forEach(function (element) {\n  element.addEventListener(\"click\", toggleVisibility.bind(null, burgerMenuContainer, \"hidden\", \"burger__menu--open\"));\n});\n\n//# sourceURL=webpack://portfolio/./src/project2.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/bg-mobile.png */ \"./src/img/bg-mobile.png\");\n/* harmony import */ var _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/bg-menu.png */ \"./src/img/bg-menu.png\");\n/* harmony import */ var _img_designo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/designo.png */ \"./src/img/designo.png\");\n/* harmony import */ var _img_designo_preview_1_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/designo-preview-1.png */ \"./src/img/designo-preview-1.png\");\n/* harmony import */ var _img_designo_preview_2_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/designo-preview-2.png */ \"./src/img/designo-preview-2.png\");\n/* harmony import */ var _img_designo_preview_3_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/designo-preview-3.png */ \"./src/img/designo-preview-3.png\");\n/* harmony import */ var _img_designo_preview_4_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/designo-preview-4.png */ \"./src/img/designo-preview-4.png\");\n/* harmony import */ var _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/contact-bg.png */ \"./src/img/contact-bg.png\");\n/* harmony import */ var _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/lt-pink-cube-half.png */ \"./src/img/lt-pink-cube-half.png\");\n/* harmony import */ var _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./img/discover-bg.png */ \"./src/img/discover-bg.png\");\n/* harmony import */ var _img_bg_footer_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./img/bg-footer.png */ \"./src/img/bg-footer.png\");\n\n\n\n\n\n\n\n\n\n\n\n // menu background\n\nvar mobileBG = document.querySelector(\".mobile-nav\");\nmobileBG.style.backgroundImage = \"url(\\\"\".concat(_img_bg_mobile_png__WEBPACK_IMPORTED_MODULE_1__, \"\\\")\");\nvar menuBG = document.querySelector(\".main-menu__bg\");\nmenuBG.src = _img_bg_menu_png__WEBPACK_IMPORTED_MODULE_2__; // contact images\n\nvar contactBGImg = document.querySelector(\".contact__bg\");\ncontactBGImg.src = _img_contact_bg_png__WEBPACK_IMPORTED_MODULE_8__;\nvar contactBGImg2 = document.querySelector(\".contact__bg--lower\");\ncontactBGImg2.src = _img_lt_pink_cube_half_png__WEBPACK_IMPORTED_MODULE_9__; // project image\n\nvar designoImg = document.querySelector(\".project__img--designo\");\ndesignoImg.style.backgroundImage = \"url(\\\"\".concat(_img_designo_png__WEBPACK_IMPORTED_MODULE_3__, \"\\\")\"); // project preview images\n\nvar designoPreviewImg1 = document.querySelector(\".preview-image--designo1\");\ndesignoPreviewImg1.src = _img_designo_preview_1_png__WEBPACK_IMPORTED_MODULE_4__;\nvar designoPreviewImg2 = document.querySelector(\".preview-image--designo2\");\ndesignoPreviewImg2.src = _img_designo_preview_2_png__WEBPACK_IMPORTED_MODULE_5__;\nvar designoPreviewImg3 = document.querySelector(\".preview-image--designo3\");\ndesignoPreviewImg3.src = _img_designo_preview_3_png__WEBPACK_IMPORTED_MODULE_6__;\nvar designoPreviewImg4 = document.querySelector(\".preview-image--designo4\");\ndesignoPreviewImg4.src = _img_designo_preview_4_png__WEBPACK_IMPORTED_MODULE_7__;\nvar projectBGFig = document.querySelector(\".project__discover-img--figure\");\nprojectBGFig.src = _img_discover_bg_png__WEBPACK_IMPORTED_MODULE_10__; // footer images\n\nvar bgFooter = document.querySelector(\".footer\");\nbgFooter.style.backgroundImage = \"url(\\\"\".concat(_img_bg_footer_png__WEBPACK_IMPORTED_MODULE_11__, \"\\\")\"); // burger menu toggle\n\nvar openedBurgerMobile = document.querySelector(\".mobile-burger\");\nvar openedBurger = document.querySelector(\".main-menu__burger\");\nvar closedBurgerMobile = document.querySelector(\".header__burger-menu--mobile\");\nvar closedBurger = document.querySelector(\".header__burger-menu--main\");\nvar menuList = document.querySelector(\".main-menu__content\");\nvar mobileMenuList = document.querySelector(\".mobile-nav__content\");\nvar burgerMenuContainer = document.querySelector(\".burger__menu-container\");\n\nvar toggleVisibility = function toggleVisibility(element) {\n  document.body.classList.toggle(\"no-scroll\");\n\n  for (var _len = arguments.length, className = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {\n    className[_key - 1] = arguments[_key];\n  }\n\n  className.map(function (className) {\n    return element.classList.toggle(className);\n  });\n};\n\n[openedBurgerMobile, openedBurger, closedBurgerMobile, closedBurger, menuList, mobileMenuList].forEach(function (element) {\n  element.addEventListener(\"click\", toggleVisibility.bind(null, burgerMenuContainer, \"hidden\", \"burger__menu--open\"));\n});\n\n//# sourceURL=webpack://portfolio/./src/project4.js?");
 
 /***/ }),
 
@@ -27,56 +27,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://portfolio/./src/styles/main.scss?");
-
-/***/ }),
-
-/***/ "./src/img/audiophile-preview-1.png":
-/*!******************************************!*\
-  !*** ./src/img/audiophile-preview-1.png ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/audiophile-preview-1.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/audiophile-preview-1.png?");
-
-/***/ }),
-
-/***/ "./src/img/audiophile-preview-2.png":
-/*!******************************************!*\
-  !*** ./src/img/audiophile-preview-2.png ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/audiophile-preview-2.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/audiophile-preview-2.png?");
-
-/***/ }),
-
-/***/ "./src/img/audiophile-preview-3.png":
-/*!******************************************!*\
-  !*** ./src/img/audiophile-preview-3.png ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/audiophile-preview-3.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/audiophile-preview-3.png?");
-
-/***/ }),
-
-/***/ "./src/img/audiophile-preview-4.png":
-/*!******************************************!*\
-  !*** ./src/img/audiophile-preview-4.png ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/audiophile-preview-4.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/audiophile-preview-4.png?");
-
-/***/ }),
-
-/***/ "./src/img/audiophile.png":
-/*!********************************!*\
-  !*** ./src/img/audiophile.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/audiophile.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/audiophile.png?");
 
 /***/ }),
 
@@ -117,6 +67,56 @@ eval("module.exports = __webpack_require__.p + \"img/bg-mobile.png\";\n\n//# sou
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"img/contact-bg.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/contact-bg.png?");
+
+/***/ }),
+
+/***/ "./src/img/designo-preview-1.png":
+/*!***************************************!*\
+  !*** ./src/img/designo-preview-1.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/designo-preview-1.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/designo-preview-1.png?");
+
+/***/ }),
+
+/***/ "./src/img/designo-preview-2.png":
+/*!***************************************!*\
+  !*** ./src/img/designo-preview-2.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/designo-preview-2.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/designo-preview-2.png?");
+
+/***/ }),
+
+/***/ "./src/img/designo-preview-3.png":
+/*!***************************************!*\
+  !*** ./src/img/designo-preview-3.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/designo-preview-3.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/designo-preview-3.png?");
+
+/***/ }),
+
+/***/ "./src/img/designo-preview-4.png":
+/*!***************************************!*\
+  !*** ./src/img/designo-preview-4.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/designo-preview-4.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/designo-preview-4.png?");
+
+/***/ }),
+
+/***/ "./src/img/designo.png":
+/*!*****************************!*\
+  !*** ./src/img/designo.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/designo.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/designo.png?");
 
 /***/ }),
 
@@ -258,7 +258,7 @@ eval("module.exports = __webpack_require__.p + \"img/lt-pink-cube-half.png\";\n\
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"project2": 0,
+/******/ 			"project4": 0,
 /******/ 			"src_styles_main_scss-src_styles_main_scss": 0
 /******/ 		};
 /******/ 		
@@ -309,7 +309,7 @@ eval("module.exports = __webpack_require__.p + \"img/lt-pink-cube-half.png\";\n\
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["src_styles_main_scss-src_styles_main_scss"], () => (__webpack_require__("./src/project2.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["src_styles_main_scss-src_styles_main_scss"], () => (__webpack_require__("./src/project4.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
